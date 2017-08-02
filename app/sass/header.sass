@@ -1,0 +1,96 @@
+/* -----HEADER----- */
+
+.header__wrap
+  width: 100%
+
+.header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 0 16px
+  width: calc(100% - 32px) // minus paddings
+  margin: 0 auto
+
+.header__menu-toggle
+  width: 22px
+  height: 16px
+
+.header__humburger
+  width: 22px
+  height: 3px
+
+  background-color: #000
+  border-radius: 1px
+  box-shadow: 0 -7px 0 0 #000, 0 7px 0 0 #000
+
+.header__nav-list
+  display: none
+
+.header__logo-wrap
+  display: flex
+  align-items: center
+
+.header__logo
+  width: 95px
+  height: 38px
+  margin-right: 12px
+
+  & img
+    width: 100%
+    height: auto
+
+.header__login-block
+  display: flex
+  align-items: center
+  justify-content: flex-end
+
+.header__login-link,
+.header__login
+  display: none
+
+@media (min-width: 1600px) /*desktop-width*/
+  .header
+    max-width: 1824px
+
+  .header__menu-toggle
+    display: none
+
+  .header__nav-list
+    display: flex
+    order: 2
+    align-items: center
+    width: 55%
+
+  .header__nav-item
+    margin-right: 4%
+
+  .header__nav-link
+    font-size: 16px
+    line-height: 24px
+    font-weight: bold
+    color: #000
+
+  .header__logo
+    width: 176px
+    height: 70px
+    margin-right: 16px
+
+  .header__login-block
+    width: 25%
+    order: 3
+
+  .header__login-link,
+  .header__login
+    display: block
+
+  .header__login
+    margin-left: 7%
+
+  .header__login-link
+    font-size: 16px
+    line-height: 24px
+    color: #787878
+    text-decoration: underline
+
+  .fast_link
+    display: none !important  /*!!! Временная ссылка*/
