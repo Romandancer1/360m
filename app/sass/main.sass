@@ -1,0 +1,113 @@
+
+.branding
+  position: fixed
+  height: 100%
+  top: 0
+
+  z-index: -1
+  background-color: #383838
+
+
+/* ---- PROMO-SLIDER ---- */
+
+.promo-banner
+  display: flex
+  justify-content: center
+  align-items: baseline
+
+/* ---- TABS ---- */
+
+.nav-tabs
+  border: none
+.nav > li > a
+  padding: 10px 20px
+
+.nav-tabs > li > a
+  line-height: 1.42857143
+  text-transform: uppercase
+  color: #999999
+  letter-spacing: normal
+  border-bottom: 3px solid transparent
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus
+  color: #000000
+  cursor: default
+  text-transform: uppercase
+  border-bottom: 3px solid red
+  transition: 1s
+  background: none
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
+  border-top: none
+  border-left: none
+  border-right: none
+
+/* ---- FLAT ---- */
+
+.flat
+  padding: 25px
+  background-color: #ffffff
+
+.flat .col-md-4
+  padding-left: 0
+
+.flat__item
+
+  margin-bottom: 20px
+  padding-bottom: 15px
+  padding-left: 15px
+  padding-right: 15px
+  margin-right: 10px
+
+  color: #000
+  border: 1px solid #ddd
+
+.flat__header
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  & h3
+    max-width: 80px
+
+.flat__header img
+  width: 95px
+  height: 99px
+
+.flat__title
+  & h4
+    line-height: 21px
+
+  & p
+    font-size: 12.5px
+
+    color: $dark-green
+
+.flat__header img::before
+  content: url("../img/main/new.png")
+  position: relative
+  left: 89px
+
+  width: 30px
+  height: 30px
+
+
+.flat__price p
+  margin-top: -10px
+
+  font-size: 21px
+
+.flat__price p::before
+  content: url(../img/main/tag.png)
+
+  position: relative
+  top: 6px
+
+  margin-right: 10px
+  width: 40px
+  height: 30px
+.flat__description
+  margin-bottom: 20px
+
+.flat__button
+  min-width: 100%
