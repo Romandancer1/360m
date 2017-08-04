@@ -1,6 +1,9 @@
 /* -----FOOTER----- */
 
 .footer__wrap
+  position: relative
+  z-index: 2
+
   background-color: $gray
 
 .footer
@@ -67,6 +70,10 @@
   height: 62px
   margin-left: 70px
 
+  & img
+    width: 100%
+    height: auto
+
 .footer__social-list
   display: flex
   align-items: center
@@ -100,3 +107,53 @@
 .footer__info
   font-size: 12px
   line-height: 16px
+
+@media (max-width: 767px)
+  .footer__right
+    align-items: center
+
+  .footer__login-block
+    flex-direction: column
+    margin-bottom: 36px
+
+  .footer__login
+    margin-left: 0
+
+  .footer__login-link
+    margin-bottom: 10px
+
+  .footer__copyright
+    flex-direction: column
+
+  .footer__logo
+    margin-left: 0
+
+  .footer__age-limit
+    margin-left: 0
+
+  .footer__social-list
+    margin-bottom: 16px
+
+  .footer__logo
+    margin-bottom: 8px
+
+@media (max-width: 477px)
+  .footer
+    padding-top: 36px
+    padding-bottom: 36px
+
+  .footer__body
+    flex-direction: column
+    align-items: center
+
+  .footer__nav,
+  .footer__right
+    width: 100%
+
+  .footer__nav
+    margin-bottom: 26px
+
+    text-align: center
+
+  .footer__nav-item
+    margin-bottom: 6px
