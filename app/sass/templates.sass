@@ -29,7 +29,8 @@
 //sizes
 
 .large-btn
-  min-width: 276px  //280px - border-size*2
+  max-width: 300px
+  width: 100% //280px - border-size*2
   padding: 16px 0
 
   font-size: 20px
@@ -46,7 +47,76 @@
 
   font-size: 14px
 
+// advertise blocks - рекламные блоки на всех страницах ( одинаковые )
+.advertising
+  background-color: rgba(255, 255, 255, 0.8)
+  z-index: 2
+
+.advertising--right
+  margin-left: 30px
+  
+  max-height: 400px
+  height: 400px
+
+.advertising--bottom
+  margin-bottom: 15px
+  height: 150px
+  max-height: 150px
+
+// sections for flats and links
+.section
+  width: 100%
+  max-width: 300px
+  margin-right: 15px
+  margin-bottom: 15px
+
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15)
+  background-color: #fff
+
+
+.section:nth-child(even)
+  margin-right: 0
+.section--small
+  max-height: 199px
+  height: 100%
+
+.section__wrap
+  padding: 25px
+  padding-bottom: 10px
+
+  display: flex
+  flex-wrap: wrap
+
+  background-color: $gray-background
+
+.section__buttons
+  display: flex
+  justify-content: space-between
+  padding-left: 25px
+  padding-right: 25px
+  padding-bottom: 25px
+
+  background-color: $gray-background
+
+.section__button
+  width: 100%
+  padding-top: 11px
+  padding-bottom: 11px
+
+  font-size: 16px
+
 //colors
+.lightgray-btn
+  color: $gray
+
+  border-color: $light-gray
+
+  &:hover
+    background-color: $gray
+
+  &:active
+    border-color: $dark-gray
+    background-color: $dark-gray
 
 .gray-btn
   color: $gray

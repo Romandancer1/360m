@@ -1,62 +1,145 @@
 
-.branding
-  background-color: #383838
-
+.branding--empty
+  background-color: #ae322c
 
 /* ---- PROMO-SLIDER ---- */
+.promo-slider__timecount
+  width: 47px
+  height: 100%
+  background-color: #ffc000
 
 .promo-slider
   position: relative
   z-index: 2
 
-  margin-top: 300px
+  margin-top: 250px
   margin-bottom: 20px
 
-.promo-slider__content
-  height: 500px
 
-  background-color: #ffe000
+
+.promo-slider__content
+  height: 375px
+  width: 100%
+  max-width: 980px
+  display: flex
 
 .promo-slider__indicators
   bottom: -45px
 
 .promo-banner
-  padding-top: 98px
-  padding-left: 120px
+  position: relative
+
   display: flex
   justify-content: center
   align-items: flex-start
 
+  background-color: #ffde00
+
+.promo-banner__text
+  padding-top: 72px
+  padding-left: 53px
+  padding-bottom: 50px
+  padding-right: 50px
+
+  z-index: 2
+
 .promo-banner__title
   margin-bottom: 20px
 
-  font-size: 58px
-  line-height: 70px
+  font-size: 50px
+  font-weight: 400
+
+  letter-spacing: -1.25px
+
+  color: #000
 
 .promo-banner__descr
-  margin-bottom: 32px
+  margin-bottom: 19px
 
-  font-size: 21px
+  font-size: 18px
   line-height: 24px
+  font-weight: 400
+
+  color: #000
+
+.promo-banner__special
+  max-width: 469px
+  width: 100%
+
+  padding-top: 90px
+  padding-left: 169px
+  padding-right: 60px
+
+  background: url(../img/main/promo-slider/promo-city.jpg)
+  background-color: rgba(255,255,255,0.5)
+  background-size: cover
+
+
+.promo-banner__special-title
+  font-size: 18px
+  font-weight: 700
+  text-transform: uppercase
+
+  color: #ffde00
+.promo-banner__special-description
+  margin-bottom: 37px
+
+  line-height: 26px
+  font-size: 24px
+  font-weight: 700
+  letter-spacing: -0.6px
+
+  color: #ffffff
+.promo-banner__more
+  margin-bottom: 50px
+
+  background-color: #d24a43
+  color: #fff
+  border: none
+  border-radius: 2px
+
+.promo-banner__more:hover
+  background-color: $dark-red
+
+.promo-banner__man
+  position: absolute
+  top: -128px
 
 /* ---- TABS ---- */
 
 .nav-tabs
+  padding-left: 25px
+  padding-right: 25px
+  padding-top: 16px
+
   border: none
+
+.nav > li
+  width: 100%
+  max-width: 153px
+
+
+  text-align: center
 .nav > li > a
-  padding: 10px 20px
+  padding-left: 0
+  padding-right: 0
+  margin-right: 0
+
+  border: none
 
 .nav-tabs > li > a
   line-height: 1.42857143
-  text-transform: uppercase
+
   color: #999999
   letter-spacing: normal
-  border-bottom: 3px solid transparent
+  font-size: 16px
+  font-weight: 700
+  border-bottom: 3px solid rgba(210,74,67,0.2)
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus
   color: #000000
   cursor: default
-  text-transform: uppercase
+
   border-bottom: 3px solid red
   transition: 1s
   background: none
@@ -68,18 +151,21 @@
 
 /* ---- FLAT ---- */
 
-.flat-content
+.content
   position: relative
   z-index: 2
 
   margin-bottom: 20px
 
-.flat
-  padding: 25px
+.content--inner
+  margin-bottom: 15px
+
   background-color: #ffffff
 
-.flat .col-md-4
-  padding-left: 0
+.flat__wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
 
 .flat__item
   margin-bottom: 20px
@@ -91,143 +177,197 @@
   color: #000
   border: 1px solid #ddd
 
-.flat__item--new-building,
-.flat__item--virtual-tour
-  padding-right: 0
-  padding-left: 0
-
 .flat__header
   display: flex
   align-items: center
   justify-content: space-between
+  margin-bottom: 20px
 
   & h3
     max-width: 80px
 
-.flat__header--new-building,
-.flat__header--virtual-tour
-  position: relative
 
-  width: 250px
-  height: 152px
-  margin: 0 auto
-  margin-bottom: 16px
 
-  & span
-    position: absolute
-    bottom: -12px
-    left: 26px
+.flat__title
+  padding-left: 15px
+  padding-right: 15px
+  margin-top: -110px
 
-    font-size: 78px
-    line-height: 78px
-    color: #fff
-    font-weight: bold
+  & h4
+    line-height: 21px
+    font-size: 16px
+    font-weight: 700
+  & p
+    font-size: 12px
+    color: $gray-text
+    text-decoration: underline
 
-.flat__description--new-buildings,
-.flat__price--new-building,
-.flat__title--new-buildings,
-.flat__description--virtual-tour,
-.flat__price--virtual-tour,
-.flat__title--virtual-tour,
-.flat__date
+.flat__types
+  padding-left: 15px
+
+  font-weight: 400
+
+.flat__price
+  padding-top: 8px
+  padding-bottom: 8px
   padding-left: 15px
   padding-right: 15px
 
-.flat__header--new-building
-  & figure
-    position: absolute
-    top: 26px
-    right: 18px
-
-.flat__header-image
-  max-width: 250px
-  width: 100%
-  height: auto
-
-.flat__title
-  & h4
-    line-height: 21px
+  background-color: #ffde00
 
   & p
-    font-size: 12.5px
-    color: $dark-green
+    font-size: 14px
+    font-weight: 700
+    line-height: normal
+    color: #000
 
-.flat__title--new-buildings
-  margin-bottom: 10px
+.flat__location
+  padding-right: 15px
 
-//.flat__header img::before                       /*НЕ ПОНЯЛ ЧТО ЭТО ЗА СТИЛИ*/
-//  content: url("../img/main/new.png")
-//  position: relative
-//  left: 89px
-//
-//  width: 30px
-//  height: 30px
-
-
-.flat__price
-  margin-bottom: 10px
-
-  font-size: 21px
-
-  & p::before
-    content: url(../img/main/tag.png)
-
-    position: relative
-    top: 6px
-
-    margin-right: 10px
-    width: 40px
-    height: 30px
-
-.flat__price--new-building
-  display: flex
-  align-items: center
-
-  & p::before
-    content: ""
-
-.flat__price-tag
-  display: flex
-  width: 40px
-  height: 28px
-  align-items: center
-  justify-content: center
-
-  font-size: 16px
-
-  background-image: url(../img/main/tag.png)
-  background-repeat: no-repeat
-
-  & sup
-    font-size: 10px
-
-.flat__description
-  margin-bottom: 20px
-
-.flat__description-item
-  display: flex
-  align-items: center
-
-.flat__description-icon
-  width: 15px
-
-  & img
-    margin-top: -2px
+  color: $gray-text
 
 .flat__date
-  margin-bottom: 16px
-  display: inline-block
+  padding-right: 15px
 
-  font-size: 21px
+  font-size: 14px
+  line-height: 30px
+  font-weight: 700
+
+.flat__hit
+  position: relative
+  top: -110px
+  left: 220px
+
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 57px
+  height: 57px
+  padding: 5px
+
+
+  background-color: #ff5a00
+  border-radius: 50px
+
+
+  & p
+    color: #fff
+
+    font-size: 18px
+    font-weight: 700
+
+    z-index: 2
+
+.flat__hit::before
+  content: ""
+  position: absolute
+
+  height: 69px
+  width: 69px
+
+  border-radius: 50px
+  background-color: rgba(255,90,0,0.50)
+  z-index: 1
+
+.flat__like
+  position: relative
+  top: -94px
+  left: 230px
+
+  width: 38px
+  height: 38px
+
+  background-color: #fff
+  border-radius: 38px
+
+.flat__like:before
+  content: ""
+  width: 30px
+  height: 25px
+  display: block
+
+  background: url('../img/icons/icons-sprite.png')
+  background-position: -196px -68px
+
+
+
+//  tours
+
+.flats__picture--shadowed
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15)
+
+.tour__header
+  position: relative
+
+.tour__picture--right
+  position: absolute
+  left: 196px
+  top: 27px
+
+.tour__title
+  padding: 20px
+  padding-top: 0
+  padding-bottom: 0
+  margin-top: -30px
+  margin-bottom: 10px
+
+  font-size: 16px
+  font-weight: 700
+
+.tour__title h4
   line-height: 30px
 
-.flat__button
-  min-width: 100%
+  color: #000000
 
-.flat__button--new-buildings,
-.flat__button--virtual-tour
-  min-width: calc(100% - 30px) //width - paddings
-  margin-left: 15px //padding
+.tour__title p
+  font-size: 14px
+  font-weight: 400
+
+.tour__like
+  position: relative
+  top: -25px
+  left: 20px
+
+  width: 38px
+  height: 38px
+
+  background-color: #fff
+  border-radius: 38px
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15)
+
+.tour__like::before
+  content: ""
+  position: relative
+  top: 0
+  left: 6px
+
+  width: 25px
+  height: 25px
+  display: block
+  background: url(../img/icons/icons-sprite.png)
+  background-position: -202px -68px
+
+// information
+
+.information__content
+  padding-left: 20px
+  padding-right: 20px
+  padding-bottom: 20px
+
+.information__title
+  margin-top: -20px
+
+  font-size: 16px
+  font-weight: 400
+  line-height: 20px
+
+.information__time
+  font-size: 12px
+  color: #8b8b8b
+
+.information__owner
+  font-size: 12px
+  color: #ae322c
 
 @media (max-width: 1199px)
   .promo-banner
