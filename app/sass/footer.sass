@@ -1,19 +1,13 @@
 /* -----FOOTER----- */
 
+.footer
+  padding-top: 80px
+
 .footer__wrap
   position: relative
   z-index: 2
 
-  background-color: $gray
-
-.footer
-  display: flex
-  flex-direction: column
-  padding: 82px 16px
-  max-width: 1066px
-  margin: 0 auto
-
-  color: #fff
+  background-color: rgba(0,0,0,0.8)
 
 .footer__body
   width: 100%
@@ -27,19 +21,21 @@
 .footer__nav-list
   display: flex
   flex-direction: column
+  margin-bottom: 40px
 
 .footer__nav-link
   color: #fff
-  font-size: 16px
+  font-size: 14px
   height: 24px
 
 .footer__right
   display: flex
   align-items: flex-end
   flex-direction: column
+  padding-top: 50px
 
 .footer__login-block
-  margin-bottom: 48px
+  margin-bottom: 30px
   display: flex
   align-items: center
   justify-content: flex-end
@@ -61,14 +57,14 @@
 .footer__age-limit
   margin-left: 60px
 
-  font-size: 56px
+  font-size: 36px
   line-height: 62px
   font-weight: 300
 
 .footer__logo
-  width: 150px
-  height: 62px
-  margin-left: 70px
+  width: 65px
+  height: 30px
+  margin-left: 170px
 
   & img
     width: 100%
@@ -105,55 +101,57 @@
   background-position: $vk
 
 .footer__info
-  font-size: 12px
+  margin-bottom: 80px
+
+  font-size: 10.5px
   line-height: 16px
 
-@media (max-width: 767px)
-  .footer__right
-    align-items: center
-
-  .footer__login-block
-    flex-direction: column
-    margin-bottom: 36px
-
-  .footer__login
-    margin-left: 0
-
-  .footer__login-link
-    margin-bottom: 10px
-
-  .footer__copyright
-    flex-direction: column
-
-  .footer__logo
-    margin-left: 0
-
-  .footer__age-limit
-    margin-left: 0
-
-  .footer__social-list
-    margin-bottom: 16px
-
-  .footer__logo
-    margin-bottom: 8px
-
-@media (max-width: 477px)
-  .footer
-    padding-top: 36px
-    padding-bottom: 36px
-
-  .footer__body
-    flex-direction: column
-    align-items: center
-
-  .footer__nav,
-  .footer__right
-    width: 100%
-
-  .footer__nav
-    margin-bottom: 26px
-
-    text-align: center
-
-  .footer__nav-item
-    margin-bottom: 6px
+//@media (max-width: 767px)
+//  .footer__right
+//    align-items: center
+//
+//  .footer__login-block
+//    flex-direction: column
+//    margin-bottom: 36px
+//
+//  .footer__login
+//    margin-left: 0
+//
+//  .footer__login-link
+//    margin-bottom: 10px
+//
+//  .footer__copyright
+//    flex-direction: column
+//
+//  .footer__logo
+//    margin-left: 0
+//
+//  .footer__age-limit
+//    margin-left: 0
+//
+//  .footer__social-list
+//    margin-bottom: 16px
+//
+//  .footer__logo
+//    margin-bottom: 8px
+//
+//@media (max-width: 477px)
+//  .footer
+//    padding-top: 36px
+//    padding-bottom: 36px
+//
+//  .footer__body
+//    flex-direction: column
+//    align-items: center
+//
+//  .footer__nav,
+//  .footer__right
+//    width: 100%
+//
+//  .footer__nav
+//    margin-bottom: 26px
+//
+//    text-align: center
+//
+//  .footer__nav-item
+//    margin-bottom: 6px
