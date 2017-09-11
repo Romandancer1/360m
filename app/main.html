@@ -9,15 +9,19 @@
   <link rel="stylesheet" href="css/normalize.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/slick/slick.css">
+    <link rel="stylesheet" href="lib/slick/slick-theme.css">
+
     <link rel="stylesheet" href="css/style.css">
 
 
   <title>Document</title>
 
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
 
 </head>
 <body>
@@ -90,99 +94,100 @@
   <div class="container promo-slider">
       <div class="row col-md-10 col-md-offset-1 promo-slider__content">
           <div class="promo-slider__timecount"></div>
-          <div id="myCarousel" class="carousel slide " data-interval="3000" data-ride="carousel">
-              <div class="carousel-inner" style="height:100%">
 
-                  <div class="active item">
-                      <div class="promo-banner">
+          <div class="promo-slider__slider">
+              <div class="promo-slider__item">
+                  <div class="promo-banner">
 
-                          <div class="promo-banner__text">
-                              <h1 class="promo-banner__title">Все новостройки Иркутска</h1>
-                              <p class="promo-banner__descr">
-                                  Актуальная база квартир в новостройках.
-                                  Планировки и цены. Акции и скилки
-                                  от застройщиков
-                              </p>
-                              <button class="button medium-btn gray-btn promo-banner__find">Найти новостройку</button>
-                          </div>
+                      <div class="promo-banner__text">
+                          <h1 class="promo-banner__title">Все новостройки Иркутска</h1>
+                          <p class="promo-banner__descr">
+                              Актуальная база квартир в новостройках.
+                              Планировки и цены. Акции и скилки
+                              от застройщиков
+                          </p>
+                          <button class="button medium-btn gray-btn promo-banner__find">Найти новостройку</button>
+                      </div>
 
-                          <img class="promo-banner__man" src="img/main/men.png" alt="Мужчина промо" width="301" height="503">
+                      <img class="promo-banner__man" src="img/main/men.png" alt="Мужчина промо" width="301" height="503">
 
-                          <div class="promo-banner__special">
-                              <h2 class="promo-banner__special-title">Специальное предложение</h2>
-                              <p class="promo-banner__special-description">
-                                  Скидка на квартиры -
-                                  200 000 рублей.
-                                  ЖК “Море Солнца”
-                                  до конца сентября 2017!
-                              </p>
-                              <button class="button medium-btn red-btn promo-banner__more">Подробнее</button>
-                          </div>
+                      <div class="promo-banner__special">
+                          <h2 class="promo-banner__special-title">Специальное предложение</h2>
+                          <p class="promo-banner__special-description">
+                              Скидка на квартиры -
+                              200 000 рублей.
+                              ЖК “Море Солнца”
+                              до конца сентября 2017!
+                          </p>
+                          <button class="button medium-btn red-btn promo-banner__more">Подробнее</button>
 
                       </div>
+
                   </div>
+              </div>
 
-                  <div class="item">
-                      <div class="promo-banner">
 
-                          <div class="promo-banner__text">
-                              <h1 class="promo-banner__title">Все новостройки Иркутска</h1>
-                              <p class="promo-banner__descr">
-                                  Актуальная база квартир в новостройках.
-                                  Планировки и цены. Акции и скилки
-                                  от застройщиков
-                              </p>
-                              <button class="button medium-btn gray-btn promo-banner__find">Найти новостройку</button>
-                          </div>
+              <div class="promo-slider__item">
+                  <div class="promo-banner">
 
-                          <img class="promo-banner__man" src="img/main/men.png" alt="Мужчина промо" width="301" height="503">
+                      <div class="promo-banner__text">
+                          <h1 class="promo-banner__title">Все новостройки Иркутска</h1>
+                          <p class="promo-banner__descr">
+                              Актуальная база квартир в новостройках.
+                              Планировки и цены. Акции и скилки
+                              от застройщиков
+                          </p>
+                          <button class="button medium-btn gray-btn promo-banner__find">Найти новостройку</button>
+                      </div>
 
-                          <div class="promo-banner__special">
-                              <h2 class="promo-banner__special-title">Специальное предложение</h2>
-                              <p class="promo-banner__special-description">
-                                  Скидка на квартиры -
-                                  200 000 рублей.
-                                  ЖК “Море Солнца”
-                                  до конца сентября 2017!
-                              </p>
-                              <button class="button medium-btn red-btn promo-banner__more">Подробнее</button>
-                          </div>
+                      <img class="promo-banner__man" src="img/main/men.png" alt="Мужчина промо" width="301" height="503">
+
+                      <div class="promo-banner__special">
+                          <h2 class="promo-banner__special-title">Специальное предложение</h2>
+                          <p class="promo-banner__special-description">
+                              Скидка на квартиры -
+                              200 000 рублей.
+                              ЖК “Море Солнца”
+                              до конца сентября 2017!
+                          </p>
+                          <button class="button medium-btn red-btn promo-banner__more">Подробнее</button>
 
                       </div>
+
                   </div>
+              </div>
 
+              <div class="promo-slider__item">
+                  <div class="promo-banner">
 
-                  <div class="item">
-                      <div class="promo-banner">
-
-                          <div class="promo-banner__text">
-                              <h1 class="promo-banner__title">Все новостройки Иркутска</h1>
-                              <p class="promo-banner__descr">
-                                  Актуальная база квартир в новостройках.
-                                  Планировки и цены. Акции и скилки
-                                  от застройщиков
-                              </p>
-                              <button class="button medium-btn gray-btn promo-banner__find">Найти новостройку</button>
-                          </div>
-
-                          <img class="promo-banner__man" src="img/main/men.png" alt="Мужчина промо" width="301" height="503">
-
-                          <div class="promo-banner__special">
-                              <h2 class="promo-banner__special-title">Специальное предложение</h2>
-                              <p class="promo-banner__special-description">
-                                  Скидка на квартиры -
-                                  200 000 рублей.
-                                  ЖК “Море Солнца”
-                                  до конца сентября 2017!
-                              </p>
-                              <button class="button medium-btn red-btn promo-banner__more">Подробнее</button>
-                          </div>
-
+                      <div class="promo-banner__text">
+                          <h1 class="promo-banner__title">Все новостройки Иркутска</h1>
+                          <p class="promo-banner__descr">
+                              Актуальная база квартир в новостройках.
+                              Планировки и цены. Акции и скилки
+                              от застройщиков
+                          </p>
+                          <button class="button medium-btn gray-btn promo-banner__find">Найти новостройку</button>
                       </div>
-                  </div>
 
+                      <img class="promo-banner__man" src="img/main/men.png" alt="Мужчина промо" width="301" height="503">
+
+                      <div class="promo-banner__special">
+                          <h2 class="promo-banner__special-title">Специальное предложение</h2>
+                          <p class="promo-banner__special-description">
+                              Скидка на квартиры -
+                              200 000 рублей.
+                              ЖК “Море Солнца”
+                              до конца сентября 2017!
+                          </p>
+                          <button class="button medium-btn red-btn promo-banner__more">Подробнее</button>
+                      </div>
+
+                  </div>
               </div>
           </div>
+          <script src="js/slick-settings.js"></script>
+
       </div>
   </div>
 
@@ -1038,6 +1043,7 @@
 
                           </div>
                       </div>
+
 
                       <!-- OVERVIEW -->
 
