@@ -254,6 +254,32 @@
 /* tabs--simple */
 
 .tab-content--simple > .tab-pane--simple
-  background-color: #fff
+  padding: 0 !important // уберу импортанты, надо будет добавить классы и стили для обычных табов, а то они переопределяют эти
+
+  background-color: #fff !important // уберу импортанты, надо будет добавить классы и стили для обычных табов, а то они переопределяют эти
+
+.nav--simple
+  display: flex
+
+.nav--simple .active
+  font-weight: bold
+
+.nav--simple>li
+  width: auto !important // уберу импортанты, надо будет добавить классы и стили для обычных табов, а то они переопределяют эти
+  margin-right: 16px
+  
+.nav--simple>li>a
+  display: inline
+  padding: 0
+
+  color: #000
+  text-align: left
+
+.nav--simple>li>a:active,
+.nav--simple>li>a:focus,
+.nav--simple>li>a:hover
+  color: #000
+  
+  background: none
 
 /* end-tabs--simple */

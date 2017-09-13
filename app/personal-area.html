@@ -18,7 +18,7 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
+    
 </head>
 <body>
 
@@ -103,104 +103,348 @@
         <img class="intro-block__man" src="img/main/men.png" alt="Мужчина промо" width="301" height="503">
     </div>
 
+    <section class="content">
     <!-- YOUR-PROJECTS -->
-    <div class="col-md-offset-1 col-md-7 your-projects">
-        <h3 class="your-projects__title"> Ваши проекты на портале 360m.ru </h3>
-        <ul class="nav nav-tabs">
-            <li class="active">
-                <a href="#tab__youth">ЖК "Молодежный"</a>
-            </li>
-            <li>
-                <a href="#tab__symbol">ЖК "Символ"</a>
-            </li>
-            <li>
-                <a href="#tab__atmosphere">ЖК "Атмосфера"</a>
-            </li>
-        </ul>
-        <div class="tab-content tab-content--simple">
-            <div id="tab__youth" class="tab-pane fade in active tab-pane--simple">
-                <div class="your-projects__gallery"></div>
-                <ul class="your-projects__characteristic-list">
-                    <li class="your-projects__characteristic-item">
-                        <img src="" alt="" class="your-projects__characteristic-image">
-                        <div class="your-projects__characteristic-wrap">
-                            <span class="your-projects__characteristic-key">название</span>
-                            <span class="your-projects__characteristic-value">ЖК «Молодежный»</span>
+        <div class="col-md-offset-1 col-md-7 your-projects">
+            <h3 class="your-projects__title">Ваши проекты на портале 360m.ru</h3>
+            <ul class="nav nav--simple your-projects__tabs" id="projects-tabs">
+                <li class="active">
+                    <a href="#tab__youth">ЖК "Молодежный"</a>
+                </li>
+                <li>
+                    <a href="#tab__symbol">ЖК "Символ"</a>
+                </li>
+                <li>
+                    <a href="#tab__atmosphere">ЖК "Атмосфера"</a>
+                </li>
+            </ul>
+            <div class="tab-content tab-content--simple">
+                <div id="tab__youth" class="tab-pane fade in active tab-pane--simple">
+                    <div class="your-projects__gallery gallery">
+                        <div class="your-projects__gallery-preview gallery__preview">
+                            <img src="img/personal-area/gallery-item.jpg" alt="">
                         </div>
-                    </li>
-                    <li class="your-projects__characteristic-item">
-                        <img src="" alt="" class="your-projects__characteristic-image">
-                        <div class="your-projects__characteristic-wrap">
-                            <span class="your-projects__characteristic-key">район</span>
-                            <span class="your-projects__characteristic-value">Свердловский</span>
+                        <ul class="your-projects__gallery-thumbnails gallery__thumbnails">
+                            <li class="your-projects__gallery-thumbnail gallery__thumbnail">
+                                <button><img src="img/personal-area/gallery-item.jpg" class="gallery__image" alt=""></button>
+                            </li>
+                            <li class="your-projects__gallery-thumbnail gallery__thumbnail">
+                                <button><img src="img/personal-area/gallery-item.jpg" class="gallery__image" alt=""></button>
+                            </li>
+                            <li class="your-projects__gallery-thumbnail gallery__thumbnail">
+                                <button><img src="img/intro/intro-bg.jpg" class="gallery__image" alt=""></button>
+                            </li>
+                            <li class="your-projects__gallery-thumbnail gallery__thumbnail">
+                                <button><img src="img/personal-area/gallery-item.jpg" class="gallery__image" alt=""></button>
+                            </li>
+                            <li class="your-projects__gallery-thumbnail gallery__thumbnail">
+                                <button><img src="img/personal-area/gallery-item.jpg" class="gallery__image" alt=""></button>
+                            </li>
+                            <li class="your-projects__gallery-thumbnail gallery__thumbnail">
+                                <button><img src="img/personal-area/gallery-item.jpg" class="gallery__image" alt=""></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="your-projects__characteristic-list">
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">название</span>
+                                <span class="your-projects__characteristic-value">ЖК «Молодежный»</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">район</span>
+                                <span class="your-projects__characteristic-value">Свердловский</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">метро</span>
+                                <span class="your-projects__characteristic-value">Московская</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">срок сдачи</span>
+                                <span class="your-projects__characteristic-value">2 кв 2017, 2 кв 2018</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">этажность</span>
+                                <span class="your-projects__characteristic-value">7,8,15,16</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">отделка</span>
+                                <span class="your-projects__characteristic-value">Черновая</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">паркинг</span>
+                                <span class="your-projects__characteristic-value">Гостевой, Подземный</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">материал</span>
+                                <span class="your-projects__characteristic-value">монолит/кирпич</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">отделка</span>
+                                <span class="your-projects__characteristic-value">Черновая</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item your-projects__characteristic-item--descr">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">описание</span>
+                                <p>
+                                    Жилой квартал "Новый" - это совместный проект ведущих строительных компаний города Иркутска.
+                                    Общая площадь квартала "Новый" - более 120 000 м2 жилья.
+                                    В декабре 2013 года в 3 новые блок-секции заехали первые жители ЖК "Новый".
+                                    На сегодня введены в эксплуатацию уже 15 блок-секций и продолжается строительство
+                                    четвертой очереди.Полное завершение проекта планируется в 2020 году.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="tab__symbol" class="tab-pane fade in tab-pane--simple">
+                    <div class="your-projects__gallery gallery">
+                        <div class="your-projects__gallery-preview gallery__preview">
+                            <img src="img/personal-area/gallery-item.jpg" alt="">
                         </div>
-                    </li>
-                    <li class="your-projects__characteristic-item">
-                        <img src="" alt="" class="your-projects__characteristic-image">
-                        <div class="your-projects__characteristic-wrap">
-                            <span class="your-projects__characteristic-key">метро</span>
-                            <span class="your-projects__characteristic-value">Московская</span>
+                        <ul class="your-projects__gallery-thumbnails gallery__thumbnails">
+                            <li class="your-projects__gallery-thumbnail gallery__thumbnail">
+                                <button><img src="img/personal-area/gallery-item.jpg" class="gallery__image" alt=""></button>
+                            </li>
+                            <li class="your-projects__gallery-thumbnail gallery__thumbnail">
+                                <button><img src="img/personal-area/gallery-item.jpg" class="gallery__image" alt=""></button>
+                            </li>
+                            <li class="your-projects__gallery-thumbnail gallery__thumbnail">
+                                <button><img src="img/intro/intro-bg.jpg" class="gallery__image" alt=""></button>
+                            </li>
+                            <li class="your-projects__gallery-thumbnail gallery__thumbnail">
+                                <button><img src="img/personal-area/gallery-item.jpg" class="gallery__image" alt=""></button>
+                            </li>
+                            <li class="your-projects__gallery-thumbnail gallery__thumbnail">
+                                <button><img src="img/personal-area/gallery-item.jpg" class="gallery__image" alt=""></button>
+                            </li>
+                            <li class="your-projects__gallery-thumbnail gallery__thumbnail">
+                                <button><img src="img/personal-area/gallery-item.jpg" class="gallery__image" alt=""></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="your-projects__characteristic-list">
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">название</span>
+                                <span class="your-projects__characteristic-value">ЖК «Молодежный»</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">район</span>
+                                <span class="your-projects__characteristic-value">Свердловский</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">метро</span>
+                                <span class="your-projects__characteristic-value">Московская</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">срок сдачи</span>
+                                <span class="your-projects__characteristic-value">2 кв 2017, 2 кв 2018</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">этажность</span>
+                                <span class="your-projects__characteristic-value">7,8,15,16</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">отделка</span>
+                                <span class="your-projects__characteristic-value">Черновая</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">паркинг</span>
+                                <span class="your-projects__characteristic-value">Гостевой, Подземный</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">материал</span>
+                                <span class="your-projects__characteristic-value">монолит/кирпич</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">отделка</span>
+                                <span class="your-projects__characteristic-value">Черновая</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item your-projects__characteristic-item--descr">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">описание</span>
+                                <p>
+                                    Жилой квартал "Новый" - это совместный проект ведущих строительных компаний города Иркутска.
+                                    Общая площадь квартала "Новый" - более 120 000 м2 жилья.
+                                    В декабре 2013 года в 3 новые блок-секции заехали первые жители ЖК "Новый".
+                                    На сегодня введены в эксплуатацию уже 15 блок-секций и продолжается строительство
+                                    четвертой очереди.Полное завершение проекта планируется в 2020 году.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="tab__atmosphere" class="tab-pane fade in tab-pane--simple">
+                    <div class="your-projects__gallery gallery">
+                        <div class="your-projects__gallery-preview gallery__preview">
+                            <img src="img/personal-area/gallery-item.jpg" alt="">
                         </div>
-                    </li>
-                    <li class="your-projects__characteristic-item">
-                        <img src="" alt="" class="your-projects__characteristic-image">
-                        <div class="your-projects__characteristic-wrap">
-                            <span class="your-projects__characteristic-key">срок сдачи</span>
-                            <span class="your-projects__characteristic-value">2 кв 2017, 2 кв 2018</span>
-                        </div>
-                    </li>
-                    <li class="your-projects__characteristic-item">
-                        <img src="" alt="" class="your-projects__characteristic-image">
-                        <div class="your-projects__characteristic-wrap">
-                            <span class="your-projects__characteristic-key">этажность</span>
-                            <span class="your-projects__characteristic-value">7,8,15,16</span>
-                        </div>
-                    </li>
-                    <li class="your-projects__characteristic-item">
-                        <img src="" alt="" class="your-projects__characteristic-image">
-                        <div class="your-projects__characteristic-wrap">
-                            <span class="your-projects__characteristic-key">отделка</span>
-                            <span class="your-projects__characteristic-value">Черновая</span>
-                        </div>
-                    </li>
-                    <li class="your-projects__characteristic-item">
-                        <img src="" alt="" class="your-projects__characteristic-image">
-                        <div class="your-projects__characteristic-wrap">
-                            <span class="your-projects__characteristic-key">паркинг</span>
-                            <span class="your-projects__characteristic-value">Гостевой, Подземный</span>
-                        </div>
-                    </li>
-                    <li class="your-projects__characteristic-item">
-                        <img src="" alt="" class="your-projects__characteristic-image">
-                        <div class="your-projects__characteristic-wrap">
-                            <span class="your-projects__characteristic-key">материал</span>
-                            <span class="your-projects__characteristic-value">монолит/кирпич</span>
-                        </div>
-                    </li>
-                    <li class="your-projects__characteristic-item">
-                        <img src="" alt="" class="your-projects__characteristic-image">
-                        <div class="your-projects__characteristic-wrap">
-                            <span class="your-projects__characteristic-key">отделка</span>
-                            <span class="your-projects__characteristic-value">Черновая</span>
-                        </div>
-                    </li>
-                    <li class="your-projects__characteristic-item your-projects__characteristic-item--descr">
-                        <img src="" alt="" class="your-projects__characteristic-image">
-                        <div class="your-projects__characteristic-wrap">
-                            <span class="your-projects__characteristic-key">описание</span>
-                            <p>
-                                Жилой квартал "Новый" - это совместный проект ведущих строительных компаний города Иркутска.
-                                Общая площадь квартала "Новый" - более 120 000 м2 жилья.
-                                В декабре 2013 года в 3 новые блок-секции заехали первые жители ЖК "Новый".
-                                На сегодня введены в эксплуатацию уже 15 блок-секций и продолжается строительство
-                                четвертой очереди.Полное завершение проекта планируется в 2020 году.
-                            </p>
-                        </div>
-                    </li>
-                </ul>
+                        <ul class="your-projects__gallery-thumbnails gallery__thumbnails">
+                            <li class="your-projects__gallery-thumbnail gallery__thumbnail">
+                                <button><img src="img/personal-area/gallery-item.jpg" class="gallery__image" alt=""></button>
+                            </li>
+                            <li class="your-projects__gallery-thumbnail gallery__thumbnail">
+                                <button><img src="img/personal-area/gallery-item.jpg" class="gallery__image" alt=""></button>
+                            </li>
+                            <li class="your-projects__gallery-thumbnail gallery__thumbnail">
+                                <button><img src="img/intro/intro-bg.jpg" class="gallery__image" alt=""></button>
+                            </li>
+                            <li class="your-projects__gallery-thumbnail gallery__thumbnail">
+                                <button><img src="img/personal-area/gallery-item.jpg" class="gallery__image" alt=""></button>
+                            </li>
+                            <li class="your-projects__gallery-thumbnail gallery__thumbnail">
+                                <button><img src="img/personal-area/gallery-item.jpg" class="gallery__image" alt=""></button>
+                            </li>
+                            <li class="your-projects__gallery-thumbnail gallery__thumbnail">
+                                <button><img src="img/personal-area/gallery-item.jpg" class="gallery__image" alt=""></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="your-projects__characteristic-list">
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">название</span>
+                                <span class="your-projects__characteristic-value">ЖК «Молодежный»</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">район</span>
+                                <span class="your-projects__characteristic-value">Свердловский</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">метро</span>
+                                <span class="your-projects__characteristic-value">Московская</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">срок сдачи</span>
+                                <span class="your-projects__characteristic-value">2 кв 2017, 2 кв 2018</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">этажность</span>
+                                <span class="your-projects__characteristic-value">7,8,15,16</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">отделка</span>
+                                <span class="your-projects__characteristic-value">Черновая</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">паркинг</span>
+                                <span class="your-projects__characteristic-value">Гостевой, Подземный</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">материал</span>
+                                <span class="your-projects__characteristic-value">монолит/кирпич</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">отделка</span>
+                                <span class="your-projects__characteristic-value">Черновая</span>
+                            </div>
+                        </li>
+                        <li class="your-projects__characteristic-item your-projects__characteristic-item--descr">
+                            <img src="" alt="" class="your-projects__characteristic-image">
+                            <div class="your-projects__characteristic-wrap">
+                                <span class="your-projects__characteristic-key">описание</span>
+                                <p>
+                                    Жилой квартал "Новый" - это совместный проект ведущих строительных компаний города Иркутска.
+                                    Общая площадь квартала "Новый" - более 120 000 м2 жилья.
+                                    В декабре 2013 года в 3 новые блок-секции заехали первые жители ЖК "Новый".
+                                    На сегодня введены в эксплуатацию уже 15 блок-секций и продолжается строительство
+                                    четвертой очереди.Полное завершение проекта планируется в 2020 году.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="col-md-3 advertising advertising--right"></div>
+    </section>
+
+    <div class="col-md-offset-1 col-md-7"></div>
 </div>
+<script src="js/tabs.js"></script>
+<script src="js/personal-area.js"></script>
+<script src="js/gallery.js"></script>
 </body>
 </html>
