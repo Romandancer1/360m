@@ -1993,8 +1993,9 @@ textarea {
   padding: 22px 28px 6px;
   background-color: #fff; }
 
-.reviews__header {
-  font-weight: bold; }
+.reviews__title {
+  font-weight: bold;
+  color: #000; }
 
 .reviews__content {
   padding-top: 15px;
