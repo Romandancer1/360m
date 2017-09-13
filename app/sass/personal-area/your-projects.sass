@@ -1,5 +1,6 @@
 .your-projects
   padding: 33px 25px 35px
+  margin-bottom: 15px
 
   background-color: #fff
 
@@ -36,12 +37,49 @@
   max-height: 130px
   display: flex
   flex-wrap: wrap
+  flex-direction: column
+  max-width: 260px
 
 .your-projects__gallery-thumbnail
   width: 60px
   height: 60px
   margin-right: 5px
   margin-bottom: 5px
+
+  &:nth-child(2n)
+    margin-bottom: 0
+
+.your-projects__gallery-thumbnail--add
+  & button
+    width: 51px
+    height: 51px
+
+.your-projects__gallery-add
+  position: relative
+
+  width: 47px
+  height: 47px
+
+  border-radius: 50%
+  border: 2px solid #000
+
+  &::before,
+  &::after
+    content: ""
+    position: absolute
+    top: 50%
+    left: 50%
+
+    width: 26px
+    height: 2px
+    margin-left: -13px
+    margin-top: -1px
+    display: block
+
+    background-color: #000
+
+  &::after
+    transform: rotate(90deg)
 
 .your-projects__characteristic-list
   display: flex

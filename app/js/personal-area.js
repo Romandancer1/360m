@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    var projectsTab = $('#projects-tabs a');
+    var projectsTab = $('.nav a');
 
     showThisTab(projectsTab);
 
