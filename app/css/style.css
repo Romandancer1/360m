@@ -1304,7 +1304,11 @@ textarea {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .section-tour__updated {
   display: -webkit-box;
@@ -1316,7 +1320,6 @@ textarea {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 52px;
   font-size: 12px;
   text-align: left;
   color: #000000; }
@@ -1325,6 +1328,26 @@ textarea {
   color: #000000;
   font-weight: 400;
   font-size: 16px; }
+
+.result__button-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .result__button-wrap button {
+    min-width: 200px; }
+
+.section-tour__add-tour {
+  position: relative;
+  z-index: 3; }
 
 .section-tour__man {
   position: absolute;
@@ -2011,8 +2034,9 @@ textarea {
   padding: 22px 28px 6px;
   background-color: #fff; }
 
-.reviews__header {
-  font-weight: bold; }
+.reviews__title {
+  font-weight: bold;
+  color: #000; }
 
 .reviews__content {
   padding-top: 15px;
@@ -2165,3 +2189,93 @@ textarea {
 .reviews__write-send--gray {
   background-color: #737373;
   border-color: #737373; }
+
+.intro-block__content--profile-building {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.intro-block__wrap--profile-building {
+  width: 800px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 67px 25px; }
+
+.intro-block__left--profile-building {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 31px; }
+  .intro-block__left--profile-building a {
+    display: block; }
+  .intro-block__left--profile-building .button {
+    width: 144px;
+    margin-bottom: 12px; }
+    .intro-block__left--profile-building .button:hover, .intro-block__left--profile-building .button:active, .intro-block__left--profile-building .button:focus {
+      text-decoration: none; }
+    .intro-block__left--profile-building .button:last-child {
+      margin-bottom: 0; }
+
+.intro-block__logo--profile-building {
+  margin-bottom: 45px; }
+  .intro-block__logo--profile-building img {
+    width: 80px;
+    height: 78px; }
+
+.intro-block__recall--profile-building {
+  color: #fff;
+  background-color: #92b93e;
+  border-color: #92b93e; }
+
+.intro-block__title--profile-building {
+  max-width: 100%;
+  margin-bottom: 114px; }
+
+.intro-block__contacts--profile-building {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.intro-block__contact-item--profile-building {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 47px;
+  color: #000; }
+  .intro-block__contact-item--profile-building:nth-child(3n) {
+    margin-right: 0; }
+
+.intro-block__status--profile-building {
+  font-size: 12px;
+  line-height: 12px; }
+
+.intro-block__address--profile-building {
+  font-weight: bold; }
+
+.intro-block__tel--profile-building {
+  font-size: 18px; }
+
+.intro-block__map--profile-building {
+  width: 170px;
+  height: auto;
+  background-image: url("../img/profile-buildings/map-1.jpg"); }
