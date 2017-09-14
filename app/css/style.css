@@ -1388,6 +1388,92 @@ textarea {
   line-height: normal;
   color: #000000; }
 
+.section-description {
+  padding: 25px;
+  margin-bottom: 20px;
+  background: #ffffff; }
+
+.section-description__title {
+  margin-bottom: 17px;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: normal;
+  color: #000000; }
+
+.section-description__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000; }
+
+.section-morgage {
+  margin-bottom: 20px;
+  margin-right: 5px; }
+
+.section-morgage__header {
+  padding: 25px;
+  padding-bottom: 0;
+  background: #ffffff; }
+  .section-morgage__header h3 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #000000; }
+
+.section-morgage__table {
+  padding: 25px;
+  background-color: #eeeeee; }
+
+.section-morgage__table--long {
+  min-height: 530px; }
+
+.section-morgage__table-string {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  background-color: #ffffff;
+  color: #000000; }
+
+.section-morgage__table-sell--bank {
+  margin-right: 35px; }
+
+.section-morgage__table-sell--rate {
+  width: 13%;
+  font-weight: 700; }
+
+.section-morgage__table-sell--sum {
+  width: 40%; }
+
+.section-morgage__table-sell--firstfee {
+  width: 20%; }
+
+.section-morgage__table-sell--term {
+  width: 32%; }
+
+.section-aside {
+  margin-bottom: 20px; }
+
+.section-aside__header {
+  padding-left: 25px;
+  padding-top: 15px;
+  padding-bottom: 8px;
+  padding-right: 25px;
+  background: #ffffff; }
+  .section-aside__header h3 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #000000; }
+
+.section-aside__table {
+  padding: 25px;
+  background-color: #eeeeee; }
+
 .promo-slider__timecount--notmain {
   width: 47px;
   background-color: #ffc000; }
@@ -1495,63 +1581,6 @@ textarea {
 
 .calculation__form-show span {
   font-weight: 700; }
-
-.result {
-  margin-bottom: 20px;
-  margin-right: 5px;
-  z-index: 2; }
-
-.result__title {
-  padding: 25px;
-  padding-bottom: 0;
-  background: #ffffff; }
-  .result__title h2 {
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 42px;
-    color: #000000; }
-
-.result__header {
-  width: 100%;
-  margin-left: 13px;
-  font-weight: 400;
-  line-height: 26px;
-  color: #c2c2c2; }
-
-.result__table {
-  padding: 25px;
-  background-color: #eeeeee; }
-
-.result__title--big {
-  padding-bottom: 7px; }
-
-.result__string {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 13px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 5px;
-  background-color: #ffffff;
-  color: #000000; }
-
-.result__bank {
-  margin-right: 35px; }
-
-.result__rate {
-  width: 13%;
-  font-weight: 700; }
-
-.result__sum {
-  width: 40%; }
-
-.result__firstfee {
-  width: 20%; }
-
-.result__term {
-  width: 32%; }
 
 ::-webkit-input-placeholder {
   color: #000000;
@@ -1700,24 +1729,6 @@ textarea {
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
-  color: #000000; }
-
-.new-building__about {
-  padding: 25px;
-  margin-bottom: 20px;
-  background: #ffffff; }
-
-.new-building__about .about__title {
-  margin-bottom: 17px;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: normal;
-  color: #000000; }
-
-.new-building__about .about__text {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
   color: #000000; }
 
 .new-building__search-form label {
