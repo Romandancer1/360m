@@ -33,14 +33,14 @@
 <div class="intro">
   <section class="intro__logo">
     <img src="img/logo.png" alt="" width="137" height="55">
-    <span>Иркутск</span>
+    <span id="city__name">Иркутск</span>
   </section>
   <h1 class="intro__title">
     Интерактивный агрегатор недвижимости
   </h1>
   <div class="intro__buttons">
     <button type="button" class="intro__btn intro__btn--transparent button" data-toggle="modal" data-target=".modal__city-choose">Выбрать город</button>
-    <button type="button" class="intro__btn intro__btn--green button">Смотреть Иркутск</button>
+    <button type="button" class="intro__btn intro__btn--green button">Смотреть <span id="button__city">Иркутск</span></button>
   </div>
   <nav class="intro__nav hidden-xs">
     <a href="">Найти новостройку</a>
@@ -70,14 +70,14 @@
                     <li class="city-choose__table-column">
                         <a href="" class="city-choose__sell--bold">Санкт-Петербург и МО</a>
                         <a href="">Ижевск</a>
-                        <a href="">Иркутск</a>
+                        <a href="irk">Иркутск</a>
                         <a href="">Калининград</a>
                         <a href="">Кемерово</a>
                         <a href="">Киров</a>
                         <a href="">Краснодар</a>
                     </li>
                     <li class="city-choose__table-column">
-                        <a href="" class="city-choose__sell--bold">Новосибирск</a>
+                        <a href="nsk" class="city-choose__sell--bold">Новосибирск</a>
                         <a href="">Красноярск</a>
                         <a href="">Курск</a>
                         <a href="">Нижний новгород</a>
@@ -107,30 +107,7 @@
     </div>
 </div>
 
-<script>
-    var cityList = $('#city-list');
-
-    if (cityList) {
-        cityList.on('click', getCity);
-    }
-
-    function getCity(event) {
-        event.preventDefault();
-        var target = $(event.target);
-        var result = null;
-
-        if (target.get(0).nodeName === 'A') {
-            result = {
-                link: target.attr('href'),
-                text: target.html()
-            }
-        }
-
-        console.log(result);
-
-        return result;
-    }
-</script>
+<script src="js/choose-city.js"></script>
 
 
 </body>
