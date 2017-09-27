@@ -16,6 +16,7 @@
   height: 47px
   margin: 0 auto
 
+
 .header__logo-wrap
   display: flex
   align-items: center
@@ -23,6 +24,32 @@
   & span
     text-decoration: underline
     color: #b1b1b1
+
+
+.header__hamburger
+  display: flex
+  flex-direction: column
+  align-items: baseline
+  width: 38px
+  height: 30px
+  margin-left: 50px
+  margin-right: 30px
+  margin-top: 5px
+
+  transition: all 300ms cubic-bezier(.61, .01, .42, 1)
+  cursor: pointer
+  background: transparent
+  border: 0
+
+.header__hamburger span
+  height: 0
+  margin-bottom: 3px
+  width: 38px
+  display: block
+
+  transition: all 300ms cubic-bezier(.61, .01, .42, 1)
+  border: 3px solid red
+
 
 .header__logo
   width: 117px
@@ -33,6 +60,10 @@
   & img
     width: 100%
     height: auto
+
+  & .header__logo--mobile
+    width: 84px
+    height: 23px
 
 
 .header__login-block
@@ -59,39 +90,47 @@
   background-image: url('../img/icons/icons-sprite.png')
   background-position: -178px -68px
 
-@media (min-width: 1200px) /*desktop-width*/
-  .header
-    max-width: 1824px
+.header__nav-list
+  display: flex
+  order: 2
+  align-items: center
+  justify-content: space-between
 
-  .header__nav-list
+
+.header__nav-link
+  font-size: 14px
+  line-height: 24px
+  font-weight: bold
+  color: #000
+
+.header__desktop-link
+  text-decoration: underline
+
+.header__login-block
+
+  order: 3
+
+.header__login-link,
+.header__login
+  display: block
+
+.header__login
+  margin-left: 7%
+
+.header__login-link
+  font-size: 16px
+  line-height: 24px
+  color: #787878
+  text-decoration: underline
+
+@media (max-width: 991px)
+  .header__logo
+    margin-left: 0
+    margin-right: 30px
     display: flex
-    order: 2
     align-items: center
-    justify-content: space-between
-
-
-  .header__nav-item
-
-
-  .header__nav-link
-    font-size: 14px
-    line-height: 24px
-    font-weight: bold
-    color: #000
+    width: 83px
 
   .header__login-block
+    margin-right: 50px
 
-    order: 3
-
-  .header__login-link,
-  .header__login
-    display: block
-
-  .header__login
-    margin-left: 7%
-
-  .header__login-link
-    font-size: 16px
-    line-height: 24px
-    color: #787878
-    text-decoration: underline

@@ -6,10 +6,15 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS LIBS-->
     <link rel="stylesheet" href="css/normalize.css">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/slick/slick.css">
+    <link rel="stylesheet" href="lib/slick/slick-theme.css">
+
     <link rel="stylesheet" href="css/style.css">
+
 
 
     <title>Document</title>
@@ -17,7 +22,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
 
 </head>
 <body>
@@ -27,18 +33,23 @@
     <div class="container">
         <div class="row">
             <div class="header">
-                <!--<button type="button" class="header__menu-toggle">-->
-                <!--<div class="header__humburger"></div>-->
-                <!--</button>-->
-                <div class="col-md-3 header__logo-wrap">
+                <div class="col-sm-3 col-md-3 header__logo-wrap">
+
+                    <button class="header__hamburger hidden-md hidden-lg">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
                     <a href="" class="header__logo">
-                        <img src="img/header-logo.png" alt="Логотип 360m.ru" width="117" height="47">
+                        <img class="hidden-sm hidden-xs" src="img/header-logo.png" alt="Логотип 360m.ru" width="117" height="47">
+                        <img class="hidden-md hidden-lg header__logo--mobile" src="img/header/header-logo-mobile.png" alt="Логотип 360m.ru мобильный" width="84" height="23">
                     </a>
                     <div style="width: 15px;height: 20px;margin-right: 8px;background-image: url('img/icons/icons-sprite.png');background-position: -4px -98px;"></div>
                     <!--div для иконки карты, пока стили задам через style, потому что непонятно кнопка это или просто картинка, если картинка, то сделаем псевдоэлементом-->
                     <span>Иркутск</span>
                 </div>
-                <ul class="col-md-7 header__nav-list ">
+                <ul class="col-md-7 hidden-sm hidden-xs header__nav-list">
                     <li class="header__nav-item">
                         <a href="" class="header__nav-link">Новостройки</a>
                     </li>
@@ -62,7 +73,9 @@
                     </li>
                 </ul>
 
-                <div class="col-md-2 header__login-block">
+                <a href="#" class="header__desktop-link col-sm-2 hidden-md hidden-lg">Полная версия сайта</a>
+
+                <div class="col-md-2 col-sm-1 header__login-block">
                     <a class="header__login-link" href=""></a>
                 </div>
             </div>
@@ -72,7 +85,7 @@
 
 <!--BRANDING-->
 
-<div class="branding">
+<div class="branding hidden-xs hidden-sm">
     <a class="" href="#" >
         <!--<img src="img/main/38sigma.jpg" alt="Брендирование Иркутск" title="">-->
         <div style="background: #ae322c; width: 9999px;height: 9999px"></div>
@@ -80,9 +93,36 @@
     </a>
 </div>
 
+<!--ADVERTISE MOBILE ONLY-->
+<div class="container">
+    <div class="col-sm-12 hidden-md hidden-lg advertising advertising--top">
+
+    </div>
+</div>
+
 <!--CONTENT--->
 
 <div class="container content">
+
+    <!-- BANK INTRO -->
+    <div class="col-md-10 col-md-offset-1 intro-block__content intro-block__content--profile-bank">
+        <div class="intro-block__top--profile-bank">
+            <a href="" class="intro-block__logo--profile-bank">
+                <img src="img/bank-profile/bank-profile-logo.png" alt="Лого банка">
+            </a>
+            <h1 class="intro-block__title intro-block__title--profile-bank">Байкальский банк "Сбербанка России"</h1>
+        </div>
+
+        <div class="intro-block__bottom--profile-bank">
+            <div class="intro-block__bottom-wrapper">
+                <a href="" class="intro-block__site--profile-bank button small-btn gray-btn">Сайт</a>
+                <a href="" class="intro-block__recall--profile-bank button small-btn gray-btn">Отделения банка</a>
+            </div>
+            <span class="intro-block__tel--profile-building">8 800 222 44 00</span>
+            <span class="intro-block__tel--profile-building">8 800 222 44 00</span>
+        </div>
+    </div>
+
 
     <!--BANK PROFLIE ABOUT-->
     <section class="col-md-7 col-md-offset-1 section-description">
@@ -98,39 +138,87 @@
 
     <!-- ADVERTISE-BLOCK-->
 
-    <div class="col-md-3 advertising advertising--right"></div>
+    <div class="col-md-3 advertising advertising--right hidden-xs hidden-sm"></div>
 
 
-    <!--MORGAGE RESULTS-->
+    <!--BANK MORGAGE RESULTS-->
     <section class="col-md-offset-1 col-md-7 section-morgage">
         <div class="section-morgage__header">
             <h3>Найденные ипотечные программы</h3>
-            <table class="result__header">
-                <tr>
-                    <td>банк</td>
-                    <td>ставка</td>
-                    <td>сумма кредита</td>
-                    <td>1-й взнос</td>
-                    <td>Срок кредита</td>
-                </tr>
-            </table>
+            <div class="section-morgage__table-header">
+                <p class="header--bank">банк</p>
+                <p class="header--rate">ставка</p>
+                <p class="header--sum">сумма кредита</p>
+                <p class="header--firstfee">1-й взнос</p>
+                <p class="header--term">Срок кредита</p>
+            </div>
         </div>
         <div class="section-morgage__table section-morgage__table--long">
             <div class="section-morgage__table-string">
                 <img src="img/morgage/sberbank--small.png" alt="Сбербанк" class="section-morgage__table-sell--bank" width="24" height="23">
-                <p class="section-morgage__table-sell section-morgage__table-sell--bank">13.5%</p>
-                <p class="section-morgage__table-sell result__sum">от 1 000 000 до 20 000 000 руб.</p>
-                <p class="section-morgage__table-sell result__firstfee">20%</p>
-                <p class="section-morgage__table-sell result__term">от 12 до 60 месяцев</p>
+                <p class="section-morgage__table-sell section-morgage__table-sell--rate">13.5%</p>
+                <p class="section-morgage__table-sell section-morgage__table-sell--sum">от 1 000 000 до 20 000 000 руб.</p>
+                <p class="section-morgage__table-sell section-morgage__table-sell--firstfee">20%</p>
+                <p class="section-morgage__table-sell section-morgage__table-sell--term">от 12 до 60 месяцев</p>
             </div>
             <div class="section-morgage__table-string">
                 <img src="img/morgage/sberbank--small.png" alt="Сбербанк" class="section-morgage__table-sell--bank" width="24" height="23">
-                <p class="section-morgage__table-sell section-morgage__table-sell--bank">13.5%</p>
-                <p class="section-morgage__table-sell result__sum">от 1 000 000 до 20 000 000 руб.</p>
-                <p class="section-morgage__table-sell result__firstfee">20%</p>
-                <p class="section-morgage__table-sell result__term">от 12 до 60 месяцев</p>
+                <p class="section-morgage__table-sell section-morgage__table-sell--rate">13.5%</p>
+                <p class="section-morgage__table-sell section-morgage__table-sell--sum">от 1 000 000 до 20 000 000 руб.</p>
+                <p class="section-morgage__table-sell section-morgage__table-sell--firstfee">20%</p>
+                <p class="section-morgage__table-sell section-morgage__table-sell--term">от 12 до 60 месяцев</p>
             </div>
 
+        </div>
+    </section>
+
+    <!-- ADVERTISE-BLOCK-->
+    <div class="col-md-offset-1 col-md-7 advertising advertising--bottom">
+
+    </div>
+
+    <!-- BANK PROFLE REVIEWS -->
+    <section class="col-md-offset-1 col-md-7 reviews">
+        <header class="reviews__header">
+            <h3 class="reviews__title">Отзывы</h3>
+        </header>
+        <div class="reviews__content">
+            <ul class="reviews__list">
+                <li class="reviews__item">
+                    <div class="reviews__item-left">
+                        <img src="img/reviews/ava.png" alt="" class="reviews__avatar">
+                        <button class="reviews__answer simple-btn">Ответить</button>
+                    </div>
+                    <div class="reviews__item-right">
+                        <div class="reviews__item-data">
+                            <span class="reviews__item-author">Татьяна Ивановна</span>
+                            <span class="reviews__item-datetime">22:40 / 22.10.2012</span>
+                        </div>
+                        <blockquote class="reviews__item-blockquote">
+                            Изменения в проектную декларацию от 27.08.2017
+                        </blockquote>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="reviews__write">
+            <h3>Написать отзыв</h3>
+            <div class="reviews__write-content">
+                <textarea name=""></textarea>
+                <div class="reviews__write-data">
+                    <span>Вы вошли как</span>
+                    <button class="reviews__write-user">ООО «ФСК ДомСтрой»</button>
+                    <button class="reviews__write-send reviews__write-send--green small-btn button">Отправить</button>
+                </div>
+
+                <!-- HIDDEN -->
+                <div class="reviews__write-data hidden">
+                    <span>Чтобы оставлять отзывы необходимо</span>
+                    <button class="reviews__write-login">Войти на сайт</button>
+                    <button class="reviews__write-send reviews__write-send--gray small-btn button">Отправить</button>
+                </div>
+                <!-- HIDDEN -->
+            </div>
         </div>
     </section>
 
@@ -140,11 +228,10 @@
 
 
 <!-- FOOTER -->
-
 <footer class="footer__wrap">
     <div class="container">
         <div class="row footer">
-            <nav class="col-md-offset-1 col-md-5 footer__nav">
+            <nav class="col-md-offset-1 col-md-5 hidden-sm hidden-xs footer__nav">
                 <ul class="footer__nav-list">
                     <li class="footer__nav-item">
                         <a href="" class="footer__nav-link">Главная</a>
@@ -180,7 +267,7 @@
             </nav>
 
             <div class="col-md-6 footer__right">
-                <div class="footer__login-block">
+                <div class="footer__login-block hidden-sm hidden-xs">
                     <a href="" class="footer__login button green-btn small-btn">Войти на сайт</a>
                 </div>
                 <div class="footer__copyright">
@@ -199,9 +286,10 @@
                         </li>
                     </ul>
                     <a href="" class="footer__logo">
-                        <img src="img/logo.png" alt="">
+                        <img class="hidden-xs hidden-sm" src="img/logo.png" alt="Логотип декстоп">
+                        <img class="hidden-md hidden-lg" src="img/footer/footer-logo-mobile.png" alt="Логотип мобилка">
                     </a>
-                    <span class="footer__age-limit">0+</span>
+                    <span class="footer__age-limit hidden-sm hidden-xs">0+</span>
                 </div>
             </div>
         </div>
