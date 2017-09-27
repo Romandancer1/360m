@@ -6,10 +6,15 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS LIBS-->
     <link rel="stylesheet" href="css/normalize.css">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/slick/slick.css">
+    <link rel="stylesheet" href="lib/slick/slick-theme.css">
+
     <link rel="stylesheet" href="css/style.css">
+
 
 
     <title>Document</title>
@@ -17,8 +22,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+
 </head>
 <body>
 
@@ -27,18 +33,23 @@
     <div class="container">
         <div class="row">
             <div class="header">
-                <!--<button type="button" class="header__menu-toggle">-->
-                <!--<div class="header__humburger"></div>-->
-                <!--</button>-->
-                <div class="col-md-3 header__logo-wrap">
+                <div class="col-sm-3 col-md-3 header__logo-wrap">
+
+                    <button class="header__hamburger hidden-md hidden-lg">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
                     <a href="" class="header__logo">
-                        <img src="img/header-logo.png" alt="Логотип 360m.ru" width="117" height="47">
+                        <img class="hidden-sm hidden-xs" src="img/header-logo.png" alt="Логотип 360m.ru" width="117" height="47">
+                        <img class="hidden-md hidden-lg header__logo--mobile" src="img/header/header-logo-mobile.png" alt="Логотип 360m.ru мобильный" width="84" height="23">
                     </a>
                     <div style="width: 15px;height: 20px;margin-right: 8px;background-image: url('img/icons/icons-sprite.png');background-position: -4px -98px;"></div>
                     <!--div для иконки карты, пока стили задам через style, потому что непонятно кнопка это или просто картинка, если картинка, то сделаем псевдоэлементом-->
                     <span>Иркутск</span>
                 </div>
-                <ul class="col-md-7 header__nav-list ">
+                <ul class="col-md-7 hidden-sm hidden-xs header__nav-list">
                     <li class="header__nav-item">
                         <a href="" class="header__nav-link">Новостройки</a>
                     </li>
@@ -62,7 +73,9 @@
                     </li>
                 </ul>
 
-                <div class="col-md-2 header__login-block">
+                <a href="#" class="header__desktop-link col-sm-2 hidden-md hidden-lg">Полная версия сайта</a>
+
+                <div class="col-md-2 col-sm-1 header__login-block">
                     <a class="header__login-link" href=""></a>
                 </div>
             </div>
@@ -72,7 +85,7 @@
 
 <!--BRANDING-->
 
-<div class="branding">
+<div class="branding hidden-xs hidden-sm">
     <a class="" href="#" >
         <!--<img src="img/main/38sigma.jpg" alt="Брендирование Иркутск" title="">-->
         <div style="background: #ae322c; width: 9999px;height: 9999px"></div>
@@ -80,6 +93,12 @@
     </a>
 </div>
 
+<!--ADVERTISE MOBILE ONLY-->
+<div class="container">
+    <div class="col-sm-12 hidden-md hidden-lg advertising advertising--top">
+
+    </div>
+</div>
 <!--CONTENT--->
 
 <div class="container main-content">
@@ -95,12 +114,14 @@
                 проектах. Добавлять фотографии и видео, а также
                 заказывать дополнительные услуги от 360m.ru
             </p>
-            <button class="button medium-btn gray-btn personal-area__edit" type="button"> Редактировать </button>
-            <button class="button medium-btn gray-btn" type="button"> Добавить фото или видео </button>
-            <button class="button medium-btn red-btn personal-area__aerial-photo" type="button"> Заказать аэросъемку </button>
+            <div class="intro-block__wrap-buttons">
+                <button class="button medium-btn gray-btn personal-area__edit" type="button"> Редактировать </button>
+                <button class="button medium-btn gray-btn" type="button"> Добавить фото или видео </button>
+                <button class="button medium-btn red-btn personal-area__aerial-photo" type="button"> Заказать аэросъемку </button>
+            </div>
         </div>
 
-        <img class="intro-block__man" src="img/main/men.png" alt="Мужчина промо" width="301" height="503">
+        <img class="intro-block__man hidden-sm hidden-xs" src="img/main/men.png" alt="Мужчина промо" width="301" height="503">
     </div>
 
     <section class="content">
@@ -214,7 +235,7 @@
                         </li>
                         <li class="your-projects__characteristic-item your-projects__characteristic-item--descr">
                             <button class="your-projects__characteristic-edit edit-btn"></button>
-                            <div class="your-projects__characteristic-wrap">
+                            <div class="your-projects__characteristic-wrap your-projects__characteristic-wrap--last">
                                 <span class="your-projects__characteristic-key">описание</span>
                                 <p>
                                     Жилой квартал "Новый" - это совместный проект ведущих строительных компаний города Иркутска.
@@ -450,7 +471,8 @@
 
     </section>
 
-    <div class="col-md-3 advertising advertising--right"></div>
+    <!--ADVERTISING BLOCK RIGHT-->
+    <div class="col-md-3 advertising advertising--right hidden-xs hidden-sm"></div>
 
     <!-- LAY-OUT -->
     <section class="col-md-offset-1 col-md-7 lay-out">
@@ -629,7 +651,7 @@
             </div>
             <div class="result__button-wrap">
                 <button class="button lightgray-btn medium-btn">Смотреть все</button>
-                <button class="button yellow-btn medium-btn">Добваить фотоотчет</button>
+                <button class="button yellow-btn medium-btn">Добавить фотоотчет</button>
                 <button class="button red-btn medium-btn">Заказать фотоотчет</button>
             </div>
 
@@ -672,7 +694,7 @@
             </div>
             <div class="result__button-wrap">
                 <button class="button lightgray-btn medium-btn">Смотреть все</button>
-                <button class="button yellow-btn medium-btn">Добваить фотоотчет</button>
+                <button class="button yellow-btn medium-btn">Добавить фотоотчет</button>
                 <button class="button red-btn medium-btn">Заказать фотоотчет</button>
             </div>
 
@@ -750,10 +772,11 @@
     </section>
 </div>
 
+<!-- FOOTER -->
 <footer class="footer__wrap">
     <div class="container">
         <div class="row footer">
-            <nav class="col-md-offset-1 col-md-5 footer__nav">
+            <nav class="col-md-offset-1 col-md-5 hidden-sm hidden-xs footer__nav">
                 <ul class="footer__nav-list">
                     <li class="footer__nav-item">
                         <a href="" class="footer__nav-link">Главная</a>
@@ -789,7 +812,7 @@
             </nav>
 
             <div class="col-md-6 footer__right">
-                <div class="footer__login-block">
+                <div class="footer__login-block hidden-sm hidden-xs">
                     <a href="" class="footer__login button green-btn small-btn">Войти на сайт</a>
                 </div>
                 <div class="footer__copyright">
@@ -808,9 +831,10 @@
                         </li>
                     </ul>
                     <a href="" class="footer__logo">
-                        <img src="img/logo.png" alt="">
+                        <img class="hidden-xs hidden-sm" src="img/logo.png" alt="Логотип декстоп">
+                        <img class="hidden-md hidden-lg" src="img/footer/footer-logo-mobile.png" alt="Логотип мобилка">
                     </a>
-                    <span class="footer__age-limit">0+</span>
+                    <span class="footer__age-limit hidden-sm hidden-xs">0+</span>
                 </div>
             </div>
         </div>

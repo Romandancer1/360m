@@ -132,6 +132,13 @@
   height: 150px
   max-height: 150px
 
+.advertising--top
+
+  margin-bottom: 15px
+  margin-top: 65px
+
+  height: 150px
+  max-height: 150px
 // sections for flats and links
 .section
   width: 100%
@@ -187,6 +194,9 @@
 .intro-block__wrap
   padding-top: 72px
   padding-left: 55px
+
+.intro-block__wrap-buttons
+  display: flex
 
 .intro-block__wrap--personal-area
   position: relative
@@ -290,3 +300,25 @@
   background: none
 
 /* end-tabs--simple */
+
+
+@media (max-width: 991px)
+  .intro-block__wrap-buttons
+    flex-direction: column
+    justify-content: space-between
+    max-width: 50%
+    height: 42%
+
+  .intro-block__content--morgage
+    flex-direction: column
+    align-items: flex-start
+
+  .section
+    margin-right: 10px
+  .section__wrap
+    justify-content: space-between
+  .section__buttons
+    padding-left: 10px
+    padding-right: 10px
+  .intro-block__content
+    margin-top: 0
