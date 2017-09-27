@@ -39,7 +39,7 @@
     Интерактивный агрегатор недвижимости
   </h1>
   <div class="intro__buttons">
-    <button type="button" class="intro__btn intro__btn--transparent button">Выбрать город</button>
+    <button type="button" class="intro__btn intro__btn--transparent button" data-toggle="modal" data-target=".modal__city-choose">Выбрать город</button>
     <button type="button" class="intro__btn intro__btn--green button">Смотреть Иркутск</button>
   </div>
   <nav class="intro__nav hidden-xs">
@@ -57,7 +57,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body">
-                <ul class="city-choose__table">
+                <ul class="city-choose__table" id="city-list">
                     <li class="city-choose__table-column">
                         <a href="" class="city-choose__sell--bold">Москва и МО</a>
                         <a href="">Барнаул</a>
@@ -108,12 +108,27 @@
 </div>
 
 <script>
-    function ChooseCity(cityList) {
-        this.cityList = $(cityList);
+    var cityList = $('#city-list');
 
-        ChooseCity.prototype.getCity = function (e) {
-            
+    if (cityList) {
+        cityList.on('click', getCity);
+    }
+
+    function getCity(event) {
+        event.preventDefault();
+        var target = $(event.target);
+        var result = null;
+
+        if (target.get(0).nodeName === 'A') {
+            result = {
+                link: target.attr('href'),
+                text: target.html()
+            }
         }
+
+        console.log(result);
+
+        return result;
     }
 </script>
 
