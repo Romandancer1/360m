@@ -29,85 +29,93 @@
 
 <body>
 
-<!--INTRO-PAGE-->
-<div class="intro">
-  <section class="intro__logo">
-    <img src="img/logo.png" alt="" width="137" height="55">
-    <span id="city__name">Иркутск</span>
-  </section>
-  <h1 class="intro__title">
-    Интерактивный агрегатор недвижимости
-  </h1>
-  <div class="intro__buttons">
-    <button type="button" class="intro__btn intro__btn--transparent button" data-toggle="modal" data-target=".modal__city-choose">Выбрать город</button>
-    <a href="irk" id="city__link" class="intro__btn intro__btn--green button">Смотреть <span id="button__city">Иркутск</span></a>
+<div class="intro__background--black">
+    <video autoplay="1" loop="1" class="intro__video">
+        <source src="video/intro-video-360m.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+    </video>
+
+    <!--INTRO-PAGE-->
+    <div class="intro">
+        <section class="intro__logo">
+            <img src="img/logos/360m-logo.png" alt="Логотип 360м" width="130" height="35">
+            <span id="city__name">Иркутск</span>
+        </section>
+        <h1 class="intro__title">
+            Интерактивный агрегатор недвижимости
+        </h1>
+        <div class="intro__buttons">
+            <button type="button" class="intro__btn intro__btn--transparent button" data-toggle="modal" data-target=".modal__city-choose">Выбрать город</button>
+            <a href="irk" id="city__link" class="intro__btn intro__btn--green button">Смотреть <span id="button__city">Иркутск</span></a>
 
 
-  </div>
-  <nav class="intro__nav hidden-xs">
-    <a href="">Найти новостройку</a>
-    <a href="">Подобрать квартиру</a>
-    <a href="">Аэропанорамы</a>
-    <a href="">Видеообзоры</a>
-    <a href="">Виртуальная реальность</a>
-  </nav>
-</div>
+        </div>
+        <nav class="intro__nav hidden-xs">
+            <a href="">Найти новостройку</a>
+            <a href="">Подобрать квартиру</a>
+            <a href="">Аэропанорамы</a>
+            <a href="">Видеообзоры</a>
+            <a href="">Виртуальная реальность</a>
+        </nav>
+    </div>
 
 
-<!--MODAL-CITY-->
-<div class="modal fade modal__city-choose">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-                <ul class="city-choose__table" id="city-list">
-                    <li class="city-choose__table-column">
-                        <a href="" class="city-choose__sell--bold">Москва и МО</a>
-                        <a href="">Барнаул</a>
-                        <a href="">Белгород</a>
-                        <a href="">Владивосток</a>
-                        <a href="">Волгоград</a>
-                        <a href="">Вологда</a>
-                        <a href="">Воронеж</a>
-                    </li>
-                    <li class="city-choose__table-column">
-                        <a href="" class="city-choose__sell--bold">Санкт-Петербург и МО</a>
-                        <a href="">Ижевск</a>
-                        <a href="irk">Иркутск</a>
-                        <a href="">Калининград</a>
-                        <a href="">Кемерово</a>
-                        <a href="">Киров</a>
-                        <a href="">Краснодар</a>
-                    </li>
-                    <li class="city-choose__table-column">
-                        <a href="nsk" class="city-choose__sell--bold">Новосибирск</a>
-                        <a href="">Красноярск</a>
-                        <a href="">Курск</a>
-                        <a href="">Нижний новгород</a>
-                        <a href="">Омск</a>
-                        <a href="">Оренбург</a>
-                        <a href="">Пермь</a>
-                    </li>
-                    <li class="city-choose__table-column">
-                        <a href="" class="city-choose__sell--bold">Екатеринбург</a>
-                        <a href="">Ростов-на-Дону</a>
-                        <a href="">Самара</a>
-                        <a href="">Саранск</a>
-                        <a href="">Саратов</a>
-                        <a href="">Сочи</a>
-                        <a href="">Томск</a>
-                    </li>
-                    <li class="city-choose__table-column">
-                        <a href="" class="city-choose__sell--bold">Казань</a>
-                        <a href="">Тюмень</a>
-                        <a href="">Уфа</a>
-                        <a href="">Хабаровск</a>
-                        <a href="">Челябинск</a>
-                    </li>
-                </ul>
+    <!--MODAL-CITY-->
+    <div class="modal fade modal__city-choose">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <ul class="city-choose__table" id="city-list">
+                        <li class="city-choose__table-column">
+                            <a href="" class="city-choose__sell--bold">Москва и МО</a>
+                            <a href="">Барнаул</a>
+                            <a href="">Белгород</a>
+                            <a href="">Владивосток</a>
+                            <a href="">Волгоград</a>
+                            <a href="">Вологда</a>
+                            <a href="">Воронеж</a>
+                        </li>
+                        <li class="city-choose__table-column">
+                            <a href="" class="city-choose__sell--bold">Санкт-Петербург и МО</a>
+                            <a href="">Ижевск</a>
+                            <a href="irk">Иркутск</a>
+                            <a href="">Калининград</a>
+                            <a href="">Кемерово</a>
+                            <a href="">Киров</a>
+                            <a href="">Краснодар</a>
+                        </li>
+                        <li class="city-choose__table-column">
+                            <a href="nsk" class="city-choose__sell--bold">Новосибирск</a>
+                            <a href="">Красноярск</a>
+                            <a href="">Курск</a>
+                            <a href="">Нижний новгород</a>
+                            <a href="">Омск</a>
+                            <a href="">Оренбург</a>
+                            <a href="">Пермь</a>
+                        </li>
+                        <li class="city-choose__table-column">
+                            <a href="" class="city-choose__sell--bold">Екатеринбург</a>
+                            <a href="">Ростов-на-Дону</a>
+                            <a href="">Самара</a>
+                            <a href="">Саранск</a>
+                            <a href="">Саратов</a>
+                            <a href="">Сочи</a>
+                            <a href="">Томск</a>
+                        </li>
+                        <li class="city-choose__table-column">
+                            <a href="" class="city-choose__sell--bold">Казань</a>
+                            <a href="">Тюмень</a>
+                            <a href="">Уфа</a>
+                            <a href="">Хабаровск</a>
+                            <a href="">Челябинск</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
+
 </div>
+
 
 <script src="js/choose-city.js"></script>
 

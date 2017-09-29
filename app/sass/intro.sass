@@ -1,5 +1,9 @@
 /* ---- INTRO ----  */
 
+/* класс только для боди - затемнение видео */
+.intro__background--black
+  background: black
+
 .intro
   height: 100vh
   width: 100%
@@ -8,24 +12,42 @@
   align-items: center
 
 
-  background-image: url("../img/intro/intro-bg.jpg")
-  box-shadow: inset 0 1000px 1000px rgba(0, 0, 0, 0.5)
+  //background-image: url("../img/intro/intro-bg.jpg")
+
+
+.intro__video
+  z-index: 0
+  position: fixed
+
+  height: 100vh
+
+  opacity: 0.7
+  box-shadow: inset 0 1000px 1000px rgba(0, 0, 0, 1)
 
 .intro__logo
+  z-index: 1
+
   display: flex
   justify-content: center
   align-items: center
   margin-top: 95px
-  margin-bottom: 106px
+  margin-bottom: 150px
 
   font-size: 20px
   color: #fff
 
   & img
-    margin-right: 20px
+    position: fixed
+    left: 50%
+    margin-left: -101px
 
+  & span
+    position: fixed
+    left: 50%
+    margin-left: 50px
 
 .intro__title
+  z-index: 1
   margin: 0
   margin-bottom: 100px
   max-width: 667px
@@ -48,6 +70,7 @@
   background-color: $dark-red
 
 .intro__buttons
+  z-index: 1
   display: flex
   justify-content: center
   align-items: center
