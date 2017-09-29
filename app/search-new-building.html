@@ -130,14 +130,18 @@
                       </span>
                         <div class="form-wrap">
                             <input class="new-building__search-input input--short" type="text" name="flat-area-from" placeholder="56 м" >
-                            <input class="new-building__search-input input--short" type="text" name="flat-area-from" placeholder="56 м" >
+                            <input class="new-building__search-input input--short" type="text" name="flat-area-to" placeholder="56 м" >
                         </div>
                     </label>
                     <label>
-                      <span class="form-label">
-                        Комнат
-                      </span>
-                      <input class="new-building__search-input input--short" type="text" name="flat-rooms-count" placeholder="все" >
+                        <span class="form-label">Комнат</span>
+                        <select class="form-control">
+                            <option value="rooms-all">Все</option>
+                            <option value="rooms-one">1</option>
+                            <option value="rooms-two">2</option>
+                            <option value="rooms-three">3</option>
+                            <option value="rooms-four">4</option>
+                        </select>
                     </label>
                 </div>
 
@@ -146,28 +150,50 @@
                       <span class="form-label">
                         Cрок сдачи
                       </span>
-                      <input class="new-building__search-input input--middle" type="text" name="flat-date" placeholder="2 кв 2017" >
+                      <select class="form-control input--middle">
+                        <option value="2-2017"> 2 кв 2017</option>
+                        <option value="3-2017"> 3 кв 2017</option>
+                        <option value="4-2017"> 4 кв 2017</option>
+                        <option value="1-2018"> 1 кв 2018</option>
+                        <option value="2-2018"> 2 кв 2018</option>
+                      </select>
                     </label>
 
                     <label>
                       <span class="form-label">
                         Этажность
                       </span>
-                        <input class="new-building__search-input input--middle" type="text" name="flat-floors" placeholder="любая" >
+                        <select class="form-control input--middle">
+                            <option value="any-floor"> любая</option>
+                            <option value="5-floor"> 5</option>
+                            <option value="6-floor"> 6</option>
+                            <option value="7-floor"> 7</option>
+                            <option value="8-floor"> 8</option>
+                        </select>
                     </label>
 
                     <label>
                       <span class="form-label">
                         Класс жилья
                       </span>
-                        <input class="new-building__search-input input--middle" type="text" name="flat-class" placeholder="любой" >
+                        <select class="form-control input--middle">
+                            <option value="any-class"> любой</option>
+                            <option value="5-floor"> 5</option>
+                            <option value="6-floor"> 6</option>
+                            <option value="7-floor"> 7</option>
+                            <option value="8-floor"> 8</option>
+                        </select>
                     </label>
 
                     <label>
                       <span class="form-label">
                         Отделка
                       </span>
-                        <input class="new-building__search-input input--middle" type="text" name="flat-repairs" placeholder="любая" >
+                        <select class="form-control input--middle">
+                            <option value="any-repair"> любая</option>
+                            <option value="clean"> чистовая</option>
+                            <option value="rough"> черновая</option>
+                        </select>
                     </label>
                 </div>
 
@@ -176,14 +202,22 @@
                       <span class="form-label">
                         Район
                       </span>
-                        <input class="new-building__search-input" type="text" name="flat-district" placeholder="Свердловский" >
+                      <select class="form-control input--long">
+                        <option value="district-svredlovsky">Свердловский</option>
+                        <option value="district-oktiabrsky"> Октябрьский</option>
+                        <option value="district-leninsky"> Ленинский</option>
+                      </select>
                     </label>
 
                     <label>
                       <span class="form-label">
                         Метро
                       </span>
-                        <input class="new-building__search-input" type="text" name="flat-metro" placeholder="Московская" >
+                        <select class="form-control input--long">
+                            <option value="metro-1">Станция</option>
+                            <option value="metro-2">Станция</option>
+                            <option value="metro-3">Станция</option>
+                        </select>
                     </label>
                 </div>
             </form>

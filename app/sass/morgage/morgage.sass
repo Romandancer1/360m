@@ -14,13 +14,19 @@
 
 .calculation__form-wrap
   display: flex
+  width: 100%
 
 .calcultation__form label
   margin-bottom: 17px
-  margin-right: 29px
+  margin-right: 10px
 
   display: flex
   flex-direction: column
+
+.calcultation__form .label--bank
+  margin-right: 0
+
+
 
 .label__margin--small
   margin-right: 10px !important
@@ -47,6 +53,10 @@
 
   border: 1px solid #000000
   color: #000000
+
+.calculation--bank
+  max-width: 174px !important
+  width: 244px !important
 
 .calcultation__form input:nth-child(3)
   max-width: 30px
@@ -89,6 +99,11 @@
 .calculation__form-show span
   font-weight: 700
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none
+  margin: 0
 
 
 ::-webkit-input-placeholder

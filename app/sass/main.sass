@@ -60,6 +60,8 @@
   height: 377px
   width: 923px
 
+  background-color: #ffde00
+
 
 .promo-banner__text
   z-index: 3
@@ -161,10 +163,10 @@
 .nav-tabs > li > a
   line-height: 1.42857143
 
-  color: #999999
+  color: black
   letter-spacing: normal
   font-size: 16px
-  font-weight: 700
+  font-weight: 400
   border-bottom: 3px solid rgba(210,74,67,0.2)
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus
@@ -174,6 +176,7 @@
   border-bottom: 3px solid red
   transition: 1s
   background: none
+  font-weight: 700
 
 .tab-content>.tab-pane
   padding: 25px
@@ -219,6 +222,7 @@
   align-items: center
   justify-content: space-between
   margin-bottom: 20px
+  overflow: hidden
 
   & h3
     max-width: 80px
@@ -333,6 +337,7 @@
 
 .tour__header
   position: relative
+  overflow: hidden
 
 .tour__picture--right
   position: absolute
@@ -384,7 +389,8 @@
   background-position: -202px -68px
 
 // information
-
+.information__header
+  overflow: hidden
 .information__content
   padding-left: 20px
   padding-right: 20px
@@ -406,10 +412,6 @@
   color: #ae322c
 
 @media (max-width: 1199px)
-  .promo-banner
-    padding-top: 50px
-    padding-left: 60px
-
   .nav-tabs
     padding-left: 0
     padding-right: 0
@@ -421,10 +423,15 @@
     width: 100%
     max-width: 250px
 
+  .tab-content > .tab-pane
+    padding: 10px
+
 @media (max-width: 991px)
   body
     background: #df1f1f
 
+  .promo-banner__background
+    height: 100%
   .container
 
     padding: 0

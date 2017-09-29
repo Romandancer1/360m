@@ -11,7 +11,10 @@
   width: 60px
 
 .input--middle
-  width: 110px
+  width: 122px
+
+.input--long
+  width: 155px
 /* -----BUTTONS----- */
 
 .button
@@ -141,6 +144,7 @@
   max-height: 150px
 // sections for flats and links
 .section
+  position: relative
   width: 100%
   max-width: 300px
   margin-right: 15px
@@ -149,9 +153,19 @@
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15)
   background-color: #fff
 
+a.section:hover
+  text-decoration: none
 
-.section:nth-child(even)
-  margin-right: 0
+  & .flat__picture
+    transition: all 0.5s ease
+    transform: scale(1.25)
+
+  & .flats__picture
+    transition: all 0.5s ease
+    transform: scale(1.25)
+
+
+
 .section--small
   max-height: 199px
   height: 100%
@@ -300,7 +314,31 @@
   background: none
 
 /* end-tabs--simple */
+//@media (min-width: 1200px)
+//  .section:nth-child(even)
+//    margin-right: 0
 
+
+
+@media (min-width: 991px)
+  .section:nth-child(even)
+    margin-right: 0
+  .section
+    margin-right: 10px
+  .section__buttons
+    padding-left: 10px
+    padding-right: 10px
+
+@media (min-width: 1199px)
+  .section__buttons
+    padding-left: 25px
+    padding-right: 25px
+
+@media (min-width: 991px) and (max-width: 1199px)
+  .section:nth-child(even)
+    margin-right: 10px
+  .section:nth-child(3n)
+    margin-right: 0
 
 @media (max-width: 991px)
   .intro-block__wrap-buttons
@@ -314,11 +352,19 @@
     align-items: flex-start
 
   .section
-    margin-right: 10px
+    margin-right: 3%
+  .section:nth-child(even)
+    margin-right: 0
   .section__wrap
-    justify-content: space-between
+    justify-content: center
   .section__buttons
-    padding-left: 10px
-    padding-right: 10px
+    justify-content: center
+
+  .section__button:first-child
+    margin-right: 3%
   .intro-block__content
     margin-top: 0
+
+@media (max-width: 672px)
+  .section
+    margin-right: 1%
