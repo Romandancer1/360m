@@ -114,25 +114,25 @@
                 Поиск новостроек
             </h1>
             <form action="" class="new-building__search-form">
-                <div class="new-building__search-wrap">
-                    <label>
-                      <span class="form-label">
-                        Стоимость квартиры
-                      </span>
-                      <input class="new-building__search-input" type="text" name="flat-price-from" placeholder="1 257 000 руб.">
-                    </label>
-                    <label>
-                        <input class="new-building__search-input" type="text" name="flat-price-to" placeholder="1 257 000 руб.">
-                    </label>
-                    <label>
-                      <span class="form-label">
+
+                    <fieldset>
+                        <span class="form-label">
+                            Стоимость квартиры
+                        </span>
+                        <div class="form-wrap">
+                            <input class="new-building__search-input" type="text" name="flat-price-from" placeholder="1 257 000 руб.">
+                            <input class="new-building__search-input" type="text" name="flat-price-to" placeholder="1 257 000 руб.">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <span class="form-label">
                         Площадь квартиры
                       </span>
                         <div class="form-wrap">
                             <input class="new-building__search-input input--short" type="text" name="flat-area-from" placeholder="56 м" >
                             <input class="new-building__search-input input--short" type="text" name="flat-area-to" placeholder="56 м" >
                         </div>
-                    </label>
+                    </fieldset>
                     <label>
                         <span class="form-label">Комнат</span>
                         <select class="form-control">
@@ -143,9 +143,9 @@
                             <option value="rooms-four">4</option>
                         </select>
                     </label>
-                </div>
 
-                <div class="new-building__search-wrap">
+
+
                     <label>
                       <span class="form-label">
                         Cрок сдачи
@@ -195,9 +195,9 @@
                             <option value="rough"> черновая</option>
                         </select>
                     </label>
-                </div>
 
-                <div class="new-building__search-wrap">
+
+
                     <label>
                       <span class="form-label">
                         Район
@@ -219,7 +219,7 @@
                             <option value="metro-3">Станция</option>
                         </select>
                     </label>
-                </div>
+               
             </form>
 
         </div>
