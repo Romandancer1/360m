@@ -45,9 +45,16 @@
                           <img class="hidden-sm hidden-xs" src="img/header-logo.png" alt="Логотип 360m.ru" width="117" height="47">
                           <img class="hidden-md hidden-lg header__logo--mobile" src="img/header/header-logo-mobile.png" alt="Логотип 360m.ru мобильный" width="84" height="23">
                       </a>
-                      <div style="width: 15px;height: 20px;margin-right: 8px;background-image: url('img/icons/icons-sprite.png');background-position: -4px -98px;"></div>
-                      <!--div для иконки карты, пока стили задам через style, потому что непонятно кнопка это или просто картинка, если картинка, то сделаем псевдоэлементом-->
-                      <span>Иркутск</span>
+                      <div style="
+                      width: 15px;height: 20px;
+                      margin-right: 8px;
+                      background-image: url('img/icons/icons-sprite.png');
+                      background-position: -4px -98px;">
+
+                      </div>
+                      <button type="button" class="header__city-toggle" data-toggle="modal" data-target=".modal__city-choose">
+                          Иркутск
+                      </button>
                   </div>
                   <ul class="col-md-7 hidden-sm hidden-xs header__nav-list">
                       <li class="header__nav-item">
@@ -1661,7 +1668,62 @@
           </div>
   </footer>
 
+  <!--MODAL-CITY-->
+  <div class="modal fade modal__city-choose">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <ul class="city-choose__table" id="city-list">
+                      <li class="city-choose__table-column">
+                          <a href="" class="city-choose__sell--bold">Москва и МО</a>
+                          <a href="">Барнаул</a>
+                          <a href="">Белгород</a>
+                          <a href="">Владивосток</a>
+                          <a href="">Волгоград</a>
+                          <a href="">Вологда</a>
+                          <a href="">Воронеж</a>
+                      </li>
+                      <li class="city-choose__table-column">
+                          <a href="" class="city-choose__sell--bold">Санкт-Петербург и МО</a>
+                          <a href="">Ижевск</a>
+                          <a href="irk">Иркутск</a>
+                          <a href="">Калининград</a>
+                          <a href="">Кемерово</a>
+                          <a href="">Киров</a>
+                          <a href="">Краснодар</a>
+                      </li>
+                      <li class="city-choose__table-column">
+                          <a href="nsk" class="city-choose__sell--bold">Новосибирск</a>
+                          <a href="">Красноярск</a>
+                          <a href="">Курск</a>
+                          <a href="">Нижний новгород</a>
+                          <a href="">Омск</a>
+                          <a href="">Оренбург</a>
+                          <a href="">Пермь</a>
+                      </li>
+                      <li class="city-choose__table-column">
+                          <a href="" class="city-choose__sell--bold">Екатеринбург</a>
+                          <a href="">Ростов-на-Дону</a>
+                          <a href="">Самара</a>
+                          <a href="">Саранск</a>
+                          <a href="">Саратов</a>
+                          <a href="">Сочи</a>
+                          <a href="">Томск</a>
+                      </li>
+                      <li class="city-choose__table-column">
+                          <a href="" class="city-choose__sell--bold">Казань</a>
+                          <a href="">Тюмень</a>
+                          <a href="">Уфа</a>
+                          <a href="">Хабаровск</a>
+                          <a href="">Челябинск</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+
   <script src="lib/sticky/jquery.sticky.js"></script>
   <script src="js/sticky-settings.js"></script>
+  <script src="js/choose-city-top.js"></script>
 </body>
 </html>

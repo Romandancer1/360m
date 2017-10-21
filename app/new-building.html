@@ -103,104 +103,98 @@
 
 <!--CONTENT--->
 
-<div class="container content new-building">
+<div class="container content new-building" >
+
 
     <!-- NEW BUILDING PREVIEW-->
-    <div class="col-md-10 col-md-offset-1 intro-block__content">
-        <div class="new-building__preview">
-            <div class="preview__wrap">
-                <div class="new-building__logo">
-                    <img src="img/logos/new-building-logo.png" width="67" height="65" alt="Логотип новостройки">
-                </div>
-                <p class="new-building__name">ООО «ФСК Союз»</p>
-            </div>
-            <h1 class="new-building__title">
-                ЖК «Радужный каскад»
+    <div class="col-md-10 col-md-offset-1 intro-block__content new-building__preview">
+        <section class="new-building__preview-header">
+            <h1 class="preview-header__title">
+                Жилой комплекс
+                <span>«Радужный Каскад»</span>
             </h1>
-        </div>
-        <div class="new-building__location hidden-xs hidden-sm">
-            <img src="img/new-building/yandex-map.png" alt="Яндекс карта" class="" width="300" height="375">
+            <div class="preview-header__wrap">
+                <img class="preview-header__logo" src="img/logos/new-building-logo.png" width="67" height="65" alt="Логотип застройщика">
+                <div class="preview-header__buildier-name">
+                    <p>застройщик</p>
+                    <span>ООО «ФСК СОЮЗ»</span>
+                </div>
+            </div>
+            <div class="preview-header__contacts">
+                <p class="contacts__button">Показать контакты</p>
+                <p class="contacts__phone">+7(3952)5940504</p>
+            </div>
+        </section>
+        <div class="new-building__preview-wrap">
+            <img class="new-building__preview-picture" src="img/new-building/new-building-preview.png" alt="Превью застройщика">
+            <div></div>
+            <!--Тут ставим яндекс карту-->
         </div>
     </div>
 
-
-
-    <!--NEW BUILDING PROPERTIES-->
-    <div class="col-md-7 col-md-offset-1">
-        <div class="new-building__properties">
-            <h3 class="properties__title">Характеристики</h3>
-
-            <div class="properties__wrap">
-                <div class="properties__sell">
-                    <span class="properties__sell--key">Город</span>
-                    <span class="properties__sell--value">Иркутск</span>
+    <section class="col-md-12 col-lg-12" id="wrapper">
+        <!--NEW BUILDING PROPERTIES-->
+        <div class="col-md-7 col-md-offset-1">
+            <div class="new-building__properties">
+                <div class="properties__header">
+                    <p class="properties__header-adress">Иркутск, Свердловский район, ул. Байкальская, 123</p>
+                    <p class="properties__header-metro">Метро Московская (8 км.)</p>
                 </div>
-                <div class="properties__sell">
-                    <span class="properties__sell--key">Район</span>
-                    <span class="properties__sell--value">Свердловский</span>
-                </div>
-                <div class="properties__sell">
-                    <span class="properties__sell--key">Адрес</span>
-                    <span class="properties__sell--value">ул. Байкальская, 123</span>
-                </div>
-                <div class="properties__sell">
-                    <span class="properties__sell--key">Метро</span>
-                    <span class="properties__sell--value">Приморская</span>
+                <p class="properties__price">от <span>34 000 руб.</span> м<sup>2</sup></p>
+                <div class="properties__wrap">
+                    <div class="properties__wrap-column">
+                        <div class="properties__sell">
+                            <p>16, 18, 24</p>
+                            <span>этажные дома</span>
+                        </div>
+                        <div class="properties__sell">
+                            <p>Черновая</p>
+                            <span>отделка</span>
+                        </div>
+                        <div class="properties__sell">
+                            <p>Гостевой</p>
+                            <span>паркинг</span>
+                        </div>
+                        <div class="properties__sell">
+                            <p>Эконом</p>
+                            <span>класс</span>
+                        </div>
+                    </div>
+                    <div class="properties__wrap-column">
+                        <div class="properties__sell">
+                            <img src="" alt="">
+                            <div class="sell__wrapper">
+                                <span>материал</span>
+                                <p>монолит-кирпич</p>
+                            </div>
+                        </div>
+                        <div class="properties__sell">
+                            <img src="" alt="">
+                            <div class="sell__wrapper">
+                                <span>форма покупки</span>
+                                <p>214 ФЗ</p>
+                            </div>
+                        </div>
+                        <div class="properties__sell">
+                            <img src="" alt="">
+                            <div class="sell__wrapper">
+                                <span>форма оплаты</span>
+                                <p>ипотека,рассрочка</p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-            <div class="properties__wrap">
-                <div class="properties__sell">
-                    <span class="properties__sell--key">Этажность</span>
-                    <span class="properties__sell--value">2, 16, 24</span>
-                </div>
-                <div class="properties__sell">
-                    <span class="properties__sell--key">Паркинг</span>
-                    <span class="properties__sell--value">Гостевой, подземный</span>
-                </div>
-                <div class="properties__sell">
-                    <span class="properties__sell--key">Материал</span>
-                    <span class="properties__sell--value">монолит/кирпич</span>
-                </div>
-                <div class="properties__sell">
-                    <span class="properties__sell--key">Планировки</span>
-                    <span class="properties__sell--value">черновая, предчистовая</span>
-                </div>
-            </div>
-            <div class="properties__wrap">
-                <div class="properties__sell properties__sell--wide">
-                    <span class="properties__sell--key">Планировки</span>
-                    <div class="properties__sell-wrap">
-                        <span class="properties__sell--value">Студия</span>
-                        <span class="properties__sell--value">23,2 - 50,6 м2</span>
-                        <span class="properties__sell--value">1 234 555 - 23 000 999 руб.</span>
-                    </div>
-                    <div class="properties__sell-wrap">
-                        <span class="properties__sell--value">1-комн</span>
-                        <span class="properties__sell--value">23,2 - 50,6 м2</span>
-                        <span class="properties__sell--value">1 234 555 - 23 000 999 руб.</span>
-                    </div>
-                </div>
-                <div class="properties__sell properties__sell--middle">
-                    <span class="properties__sell--key">Срок сдачи</span>
-                    <div class="properties__sell-wrap">
-                        <span class="properties__sell--value">б/c 1,8,7,5,3,2</span>
-                        <span class="properties__sell--value">2 кв 2018</span>
-                    </div>
-                    <div class="properties__sell-wrap">
-                        <span class="properties__sell--value">б/c 1,8,7,5,3,2</span>
-                        <span class="properties__sell--value">2 кв 2018</span>
-                    </div>
-                </div>
+            <!-- ADVERTISE-BLOCK-->
+            <div class="col-md-12 col-lg-12 advertising advertising--bottom">
             </div>
         </div>
 
         <!-- ADVERTISE-BLOCK-->
-        <div class="col-md-12 col-lg-12 advertising advertising--bottom">
-        </div>
-    </div>
+        <div class="col-md-3 advertising advertising--right hidden-xs hidden-sm" id="sticker"></div>
 
-    <!-- ADVERTISE-BLOCK-->
-    <div class="col-md-3 advertising advertising--right hidden-xs hidden-sm"></div>
+    </section>
 
     <!--NEW BUILDING-ABOUT-->
     <section class="col-md-7 col-md-offset-1 section-description">
@@ -464,6 +458,9 @@
             </div>
         </div>
     </section>
+
+
+
 </div>
 
 
@@ -541,5 +538,15 @@
         </p>
     </div>
 </footer>
+
+<script src="lib/sticky/jquery.sticky.js"></script>
+<script src="js/sticky-settings.js"></script>
+<script>
+    $('.contacts__phone').hide();
+    $('.contacts__button').click(function() {
+        $('.contacts__button').hide();
+        $('.contacts__phone').fadeIn();
+    });
+</script>
 </body>
 </html>

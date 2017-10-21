@@ -1,82 +1,125 @@
 // new-flats-search
 
-.new-building__search-form label
+.intro-block__content--search
+  position: relative
+.new-building__search
+  padding: 69px 72px
+  width: 100%
+
+  background-color: rgba(0,0,0,0.8)
+
+.new-building__search-header
+  margin-bottom: 27px
+  display: flex
+  justify-content: space-between
+
+  & .search__title
+    font-size: 50px
+    font-weight: 400
+
+    letter-spacing: -1.25px
+    color: #ffffff
+
+  & .search__input
+    padding: 15px 25px
+    min-width: 241px
+
+    color: white
+    background-color: rgba(0,0,0,0.4)
+
+  & .search__showmap
+    padding: 12px 33px
+
+    font-size: 16px
+    color: #ffffff
+    background-color: #ff5a00
+
+
+
+.search__input::-webkit-input-placeholder
+  color: white
+  text-decoration: underline
+.search__input::-moz-placeholder
+  color: white
+  text-decoration: underline
+.search__input:-moz-placeholder
+  color: white
+  text-decoration: underline
+.search__input:-ms-input-placeholder
+  color: white
+  text-decoration: underline
+
+.new-building__search-form
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+
+.new-building__search-form
+  & form
+    display: flex
+    flex-wrap: wrap
+    max-width: 500px
+
+  & label
+    display: flex
+    flex-direction: column
+    margin-right: 13px
+
+.form-label
+  font-size: 16px
+  font-weight: 400
+
+  color: #ffffff
+
+.bs-caret
+    display: none
+
+.search--price
+  margin-right: 15px
+  margin-bottom: 26px
+  max-width: 303px
+
+.search--price input::-webkit-input-placeholder
+  color: black
+  font-weight: 700
+
+.search--price input::-moz-placeholder
+  color: black
+  font-weight: 700
+.search--price input:-moz-placeholder
+  color: black
+  font-weight: 700
+.search--price input:-ms-input-placeholder
+  color: black
+  font-weight: 700
+
+.form--price
+  max-width: 140px
+
+.form--plans
   display: flex
   flex-direction: column
+  margin-right: 13px
 
-.new-building__search-wrap
-  display: flex
-  align-items: flex-end
-
-.new-building__search-wrap label
-  margin-right: 6px
-.new-building__search-wrap:last-child
-  margin-bottom: 57px
-
-.new-building__search-form .form-control
-   padding: 5px 30px
-   height: 32px
-   color: black
-   border-radius: 0
-   cursor: pointer
-
-.new-building__search-form fieldset span
-  font-size: 12px
-  font-weight: 400
-  color: #000000
-.new-building__search-form label span
-  font-size: 12px
-  font-weight: 400
-  color: #000000
-
-.new-building__search-input .btn
-  padding: 5px 12px
-  font-weight: 700
-
+.bootstrap-select.btn-group.fit-width .dropdown-toggle .filter-option
   color: black
-  border-radius: 0
+.btn-toolbar > .btn, .btn-toolbar > .btn-group, .btn-toolbar > .input-group
+  margin-left: 0
 
-
-.new-building__search-form input
-  padding-top: 4px
-  padding-bottom: 4px
-  padding-left: 10px
-  padding-right: 10px
-  max-width: 121px
-  display: flex
-  justify-content: center
-
-  border: 1px solid #c8c8c8
-  color: #000000
+.btn-default
   font-weight: 700
-.new-building__wrap
-  display: flex
-  align-items: flex-end
-  padding-left: 55px
-  padding-bottom: 46px
 
-  z-index: 3
+.btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default
+  background-color: #ffc000
 
-.input--rooms
-  padding: 3px 6px !important
-.input--deadline
-  margin-right: 6px
-.input--level
-  margin-right: 6px
-.input--class
-  margin-right: 6px
-.input--decoration
-  padding: 3px 6px !important
-  padding-left: 15px
-.input--region
-  margin-bottom: 45px
+.btn-default:active:hover, .btn-default.active:hover, .open > .dropdown-toggle.btn-default:hover, .btn-default:active:focus, .btn-default.active:focus, .open > .dropdown-toggle.btn-default:focus, .btn-default:active.focus, .btn-default.active.focus, .open > .dropdown-toggle.btn-default.focus
+  background-color: #ffc000
 
-.form-wrap
-  display: flex
-//  костыль
-.form-wrap input
-  margin-right: 6px
 
-@media (max-width: 991px)
-  .new-building__search
-    flex-direction: column
+.new-building__map
+  position: absolute
+  z-index: -1
+  width: 100%
+  height: 100%
+
+

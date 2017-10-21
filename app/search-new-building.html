@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="lib/slick/slick.css">
     <link rel="stylesheet" href="lib/slick/slick-theme.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="lib/bootstrap-select/bootstrap-select.css">
+
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -106,130 +109,108 @@
 <div class="container">
 
     <!-- NEW BUILDING SEARCH-->
-    <div class="col-md-10 col-md-offset-1 intro-block__content new-building__search">
+    <div class="col-md-10 col-md-offset-1 intro-block__content intro-block__content--search">
         <div class="promo-slider__timecount--notmain"></div>
 
-        <div class="intro-block__wrap">
-            <h1 class="intro-block__title">
-                Поиск новостроек
-            </h1>
-            <form action="" class="new-building__search-form">
+        <div class="new-building__search">
+            <div class="new-building__search-header">
+                <h1 class="search__title">Поиск новостроек</h1>
+                <input class="search__input" type="text" placeholder="Введите название или адрес">
+                <button class="search__showmap">На карте</button>
+            </div>
 
-                    <fieldset>
-                        <span class="form-label">
-                            Стоимость квартиры
-                        </span>
-                        <div class="form-wrap">
-                            <input class="new-building__search-input" type="text" name="flat-price-from" placeholder="1 257 000 руб.">
-                            <input class="new-building__search-input" type="text" name="flat-price-to" placeholder="1 257 000 руб.">
+            <div class="new-building__search-form">
+                <form>
+                    <fieldset class="search--price">
+                        <span class="form-label">Стоимость м<sup>2</sup></span>
+                        <div class="form-inline">
+                            <input type="number" class="form-control form--price" placeholder="от 55 000 руб.">
+                            <input type="number" class="form-control form--price" placeholder="до 100 000 руб.">
                         </div>
                     </fieldset>
-                    <fieldset>
-                        <span class="form-label">
-                        Площадь квартиры
-                      </span>
-                        <div class="form-wrap">
-                            <input class="new-building__search-input input--short" type="text" name="flat-area-from" placeholder="56 м" >
-                            <input class="new-building__search-input input--short" type="text" name="flat-area-to" placeholder="56 м" >
+
+                    <label>
+                        <span class="form-label">Район</span>
+                        <select class="selectpicker" multiple title="Любой" data-width="174px" data-max-options="1">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+                    </label>
+
+                    <div class="btn-toolbar demoPadder form--plans" role="toolbar" aria-label="Toolbar with button groups">
+                        <span class="form-label">Планировки</span>
+                        <div class="btn-group" role="group" aria-label="First group">
+                            <button type="button" class="btn btn-default">1</button>
+                            <button type="button" class="btn btn-default">2</button>
+                            <button type="button" class="btn btn-default">3</button>
+                            <button type="button" class="btn btn-default">4+</button>
                         </div>
-                    </fieldset>
+                    </div>
+
                     <label>
-                        <span class="form-label">Комнат</span>
-                        <select class="form-control">
-                            <option value="rooms-all">Все</option>
-                            <option value="rooms-one">1</option>
-                            <option value="rooms-two">2</option>
-                            <option value="rooms-three">3</option>
-                            <option value="rooms-four">4</option>
+                        <span class="form-label">Этажность</span>
+                        <select class="selectpicker" multiple title="Любой" data-width="90px" data-max-options="1">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        <span class="form-label">Отделка</span>
+                        <select class="selectpicker" multiple title="Любая" data-width="90px" data-max-options="1">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+                    </label>
+
+
+                    <label>
+                        <span class="form-label">Класс</span>
+                        <select class="selectpicker" multiple title="Любой" data-width="90px" data-max-options="1">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
                         </select>
                     </label>
 
 
 
-                    <label>
-                      <span class="form-label">
-                        Cрок сдачи
-                      </span>
-                      <select class="form-control input--middle">
-                        <option value="2-2017"> 2 кв 2017</option>
-                        <option value="3-2017"> 3 кв 2017</option>
-                        <option value="4-2017"> 4 кв 2017</option>
-                        <option value="1-2018"> 1 кв 2018</option>
-                        <option value="2-2018"> 2 кв 2018</option>
-                      </select>
-                    </label>
-
-                    <label>
-                      <span class="form-label">
-                        Этажность
-                      </span>
-                        <select class="form-control input--middle">
-                            <option value="any-floor"> любая</option>
-                            <option value="5-floor"> 5</option>
-                            <option value="6-floor"> 6</option>
-                            <option value="7-floor"> 7</option>
-                            <option value="8-floor"> 8</option>
-                        </select>
-                    </label>
-
-                    <label>
-                      <span class="form-label">
-                        Класс жилья
-                      </span>
-                        <select class="form-control input--middle">
-                            <option value="any-class"> любой</option>
-                            <option value="5-floor"> 5</option>
-                            <option value="6-floor"> 6</option>
-                            <option value="7-floor"> 7</option>
-                            <option value="8-floor"> 8</option>
-                        </select>
-                    </label>
-
-                    <label>
-                      <span class="form-label">
-                        Отделка
-                      </span>
-                        <select class="form-control input--middle">
-                            <option value="any-repair"> любая</option>
-                            <option value="clean"> чистовая</option>
-                            <option value="rough"> черновая</option>
-                        </select>
-                    </label>
 
 
+                </form>
 
-                    <label>
-                      <span class="form-label">
-                        Район
-                      </span>
-                      <select class="form-control input--long">
-                        <option value="district-svredlovsky">Свердловский</option>
-                        <option value="district-oktiabrsky"> Октябрьский</option>
-                        <option value="district-leninsky"> Ленинский</option>
-                      </select>
-                    </label>
-
-                    <label>
-                      <span class="form-label">
-                        Метро
-                      </span>
-                        <select class="form-control input--long">
-                            <option value="metro-1">Станция</option>
-                            <option value="metro-2">Станция</option>
-                            <option value="metro-3">Станция</option>
-                        </select>
-                    </label>
-               
-            </form>
-
+                <button type="submit" class="button medium-btn yellow-btn search__results-show"> Показать <span id="filter__count">6</span> вариантов</button>
+            </div>
         </div>
-
-        <div class="new-building__wrap">
-            <button class="button medium-btn yellow-btn"> Показать <span>136</span> вариантов</button>
+        <div id="yandexmap" class="new-building__map">
+            <!--Сюда ставим яндекс карту-->
         </div>
-        <img class="intro-block__man hidden-xs hidden-sm" src="img/main/men.png" alt="Мужчина промо" width="301" height="503">
-
     </div>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap,
+            myPlacemark;
+
+        function init(){
+            myMap = new ymaps.Map("yandexmap", {
+                center: [55.76, 37.64],
+                zoom: 7
+            });
+
+            myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+                hintContent: 'Москва!',
+                balloonContent: 'Столица России'
+            });
+
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
 
 
     <section class="content">
@@ -935,5 +916,9 @@
         </p>
     </div>
 </footer>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="lib/bootstrap-select/bootstrap-select.js"></script>
+
 </body>
 </html>
