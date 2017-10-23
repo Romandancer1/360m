@@ -49,7 +49,8 @@
                       width: 15px;height: 20px;
                       margin-right: 8px;
                       background-image: url('img/icons/icons-sprite.png');
-                      background-position: -4px -98px;">
+                      background-position: -1px -80px;
+                      background-size: 249px;  ">
 
                       </div>
                       <button type="button" class="header__city-toggle" data-toggle="modal" data-target=".modal__city-choose">
@@ -258,6 +259,7 @@
                               <button class="flat__like"></button>
 
                               <div class="flat__title">
+                                  <h4>Тип обьекта</h4>
                                   <h4>ЖК «Молодежный»</h4>
                                   <p>ООО «ФСК ДомСтрой»</p>
                               </div>
@@ -1672,6 +1674,8 @@
   <div class="modal fade modal__city-choose">
       <div class="modal-dialog">
           <div class="modal-content">
+
+
               <div class="modal-body">
                   <ul class="city-choose__table" id="city-list">
                       <li class="city-choose__table-column">
@@ -1719,7 +1723,11 @@
                       </li>
                   </ul>
               </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+              </div>
           </div>
+
       </div>
 
   <script src="lib/sticky/jquery.sticky.js"></script>

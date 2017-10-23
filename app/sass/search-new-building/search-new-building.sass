@@ -95,7 +95,12 @@
 
 .form--price
   max-width: 140px
-
+.form--price:first-child
+  border-bottom-right-radius: 0
+  border-top-right-radius: 0
+.form--price:nth-child(2)
+  border-bottom-left-radius: 0
+  border-top-left-radius: 0
 .form--plans
   display: flex
   flex-direction: column
@@ -115,7 +120,8 @@
 .btn-default:active:hover, .btn-default.active:hover, .open > .dropdown-toggle.btn-default:hover, .btn-default:active:focus, .btn-default.active:focus, .open > .dropdown-toggle.btn-default:focus, .btn-default:active.focus, .btn-default.active.focus, .open > .dropdown-toggle.btn-default.focus
   background-color: #ffc000
 
-
+.bootstrap-select.btn-group .dropdown-toggle .filter-option
+  text-align: left
 .new-building__map
   position: absolute
   z-index: -1
