@@ -46,6 +46,9 @@
         <div class="intro__buttons">
             <button type="button" class="intro__btn intro__btn--transparent button"
                     data-toggle="modal" data-target=".modal__city-choose">Выбрать город</button>
+
+            <button type="button" class="intro__btn intro__btn--transparent button"
+                    data-toggle="modal" data-target=".modal-flat">Выбрать город</button>
             <a href="irk" id="city__link" class="intro__btn intro__btn--green button">Смотреть <span id="button__city">Иркутск</span></a>
 
 
@@ -118,6 +121,84 @@
 </div>
 
 
+<!--MODAL-FLAT-INFO-->
+<div class="modal fade modal-flat">
+    <div class="modal-dialog modal-dialog--flat">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal__flat-info">
+                    <div class="flat-info__wrapper">
+                        <h3 class="flat-info__title">1-комн 56.7 м2</h3>
+                        <p class="flat-info__name">Жилой комплекс «Радужный Каскад»</p>
+                        <p class="flat-info__location">Октябрьский, ул. Лермонтова, 122</p>
+                        <span class="flat-info__price">1 235 377 руб.</span>
+                        <span class="flat-info__price-meters">45 000 руб. /м2</span>
+                        <ul class="flat-info__properties">
+                            <li class="flat-info__properties-item">
+                                <div class="properties__sell-icon properties__sell-icon--material"></div>
+                                <div class="sell__wrapper">
+                                    <span>отделка</span>
+                                    <p>получистовая</p>
+                                </div>
+                            </li>
+                            <li class="flat-info__properties-item">
+                                <div class="properties__sell-icon properties__sell-icon--floor"></div>
+                                <div class="sell__wrapper">
+                                    <span>доступные этажи</span>
+                                    <p>1,2,3,4,5</p>
+                                </div>
+                            </li>
+                            <li class="flat-info__properties-item">
+                                <div class="properties__sell-icon properties__sell-icon--ceiling"></div>
+                                <div class="sell__wrapper">
+                                    <span>Высота потолоков</span>
+                                    <p>270 см</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="button medium-btn yellow-btn">Запись на просмотр</button>
+                    </div>
+                    <div class="flat-info__wrapper">
+                            <ul class="nav nav--simple flat-info__tabs">
+                                <li class="active">
+                                    <a href="#tab__flat-info--lay-out">Планировка</a>
+                                </li>
+                                <li>
+                                    <a href="#tab__flat-info--sizes">С размерами</a>
+                                </li>
+                                <li>
+                                    <a href="#tab__flat-info--3d">3D</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content tab-content--simple">
+                                <div id="tab__flat-info--lay-out" class="tab-pane fade in active tab-pane--simple">
+                                    <img class="flat-info__picture" src="img/templates/flat-preview.png" alt="Превью квартиры">
+                                </div>
+
+                                <div id="tab__flat-info--sizes" class="tab-pane fade in tab-pane--simple">
+                                    <img class="flat-info__picture" src="img/templates/flat-preview.png" alt="Превью квартиры">
+                                </div>
+
+                                <div id="tab__flat-info--3d" class="tab-pane fade in tab-pane--simple">
+                                    <img class="flat-info__picture" src="img/templates/flat-preview.png" alt="Превью квартиры">
+                                </div>
+                            </div>
+                            <button class="button large-btn flat-info__virtual-tour">Смотреть виртуальный тур</button>
+                    </div>
+
+                </div>
+            </div>
+            <button class="modal-close" data-dismiss="modal"></button>
+        </div>
+        <section class="modal__flat-info-advertise">
+
+        </section>
+    </div>
+
+</div>
+
+<script src="js/personal-area.js"></script>
+<script src="js/tabs.js"></script>
 <script src="js/choose-city.js"></script>
 
 

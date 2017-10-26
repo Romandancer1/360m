@@ -1,0 +1,143 @@
+.modal-flat
+  top: 50%
+  margin-top: -250px
+
+  & .modal-content
+    border-radius: 0
+.modal-flat .modal-dialog
+  width: 100%
+  max-width: 973px
+
+.modal-dialog--flat
+  display: flex
+  justify-content: space-between
+
+
+.modal__flat-info
+  width: 633px
+  padding: 10px 35px
+  display: flex
+  justify-content: space-between
+
+.flat-info__wrapper
+  display: flex
+  flex-direction: column
+
+.flat-info__wrapper:nth-child(2)
+  justify-content: space-between
+.flat-info__title
+  margin-bottom: 10px
+
+  font-size: 30px
+  font-weight: 400
+  line-height: normal
+  color: #000000
+
+.flat-info__name
+  font-size: 12px
+  font-weight: 400
+  line-height: normal
+
+  color: #000000
+  text-decoration: underline
+
+.flat-info__location
+  margin-bottom: 5px
+  font-size: 12px
+
+  color: #565656
+
+.flat-info__price
+  font-size: 24px
+  font-weight: 700
+
+  color: #000000
+.flat-info__price-meters
+  margin-bottom: 7px
+  font-size: 12px
+  font-weight: 400
+
+  color: #565656
+
+.flat-info__properties
+  margin-bottom: 15px
+
+.flat-info__properties-item
+  display: flex
+  align-items: center
+  margin-bottom: 10px
+
+  & span
+    font-size: 14px
+    color: #888888
+
+  & p
+    margin-top: -5px
+    font-size: 16px
+    font-weight: 400
+    color: #000000
+
+.properties__sell-icon--floor
+  background-position: 248px -104px
+
+.properties__sell-icon--ceiling
+  background-position: 248px -145px
+
+.flat-info__tabs
+  margin-bottom: 10px
+  justify-content: space-between
+
+  & a
+    font-size: 16px
+    font-weight: 400
+    text-decoration: underline
+
+    color: #9b9b9b !important
+
+  & .active a
+    color: #000000 !important
+
+.flat-info__virtual-tour
+  padding: 12px 32px
+
+  font-size: 16px
+  font-weight: 400
+  color: #ffffff
+  background-color: #44a907
+  border-radius: 5px
+
+.flat-info__virtual-tour:hover
+  background-color: #33b100
+
+.modal__flat-info-advertise
+  width: 272px
+  height: 402px
+  background: white
+.modal-close
+  position: absolute
+  top: -23px
+  right: -23px
+  display: inline-block
+  width: 51px
+  height: 51px
+  border: none
+  border-radius: 50px
+  color: white
+  background: #f80d23
+.modal-close
+  opacity: 1
+.modal-close:hover
+  opacity: 0.9
+.modal-close:before, .modal-close:after
+  position: absolute
+  left: 23px
+  top: 14px
+  content: ' '
+  height: 23px
+  width: 5px
+  background-color: white
+.modal-close:before
+  transform: rotate(45deg)
+
+.modal-close:after
+  transform: rotate(-45deg)
