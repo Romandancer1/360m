@@ -116,7 +116,7 @@
             <div class="new-building__search-header">
                 <h1 class="search__title">Поиск новостроек</h1>
                 <input class="search__input" type="text" placeholder="Введите название или адрес">
-                <button class="search__showmap">На карте</button>
+                <button class="search__showmap" id="yandexmap-show">На карте</button>
             </div>
 
             <div class="new-building__search-form">
@@ -187,6 +187,7 @@
         </div>
         <div id="yandexmap" class="new-building__map">
             <!--Сюда ставим яндекс карту-->
+            <button class="modal-close modal-close--yandex-map" id="yandexmap-close"></button>
         </div>
     </div>
 
@@ -919,6 +920,7 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="lib/bootstrap-select/bootstrap-select.js"></script>
+<script src="js/show-yandex-map-full.js"></script>
 
 </body>
 </html>
