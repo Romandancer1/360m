@@ -1,3 +1,22 @@
+.content__container
+  width: 1200px
+  padding: 0
+  margin: 0 auto
+
+
+
+.content__columns
+  display: flex
+
+  & .content__left
+    margin-right: 15px
+
+  & .content__right
+    display: flex
+
+.content--news
+  margin-bottom: 15px
+
 .hidden
   display: none
 
@@ -54,7 +73,7 @@
 
 .medium-btn
   min-width: 216px  //220px - border-size*2
-  padding: 11px 0
+  padding: 10px 0
 
   font-size: 16px
 
@@ -124,47 +143,48 @@
     border-color: $dark-red
     background-color: $dark-red
 
+
+.primary-red-btn
+  color: #ffffff
+
+  background-color: $primary-red
+  border: 2px solid $primary-red
+
+  &:hover
+    background-color: $dark-red
+
+
+.black-btn
+  color: black
+
+  border-color: black
+
+  &:hover
+    background-color: $gray
+
+  &:active
+    border-color: black
+    background-color: black
+
+
+
+
 // advertise blocks - рекламные блоки на всех страницах ( одинаковые )
-.advertising
-  background-color: rgba(255, 255, 255, 0.8)
-  z-index: 2
 
-.advertising--right
-  margin-left: 30px
-  
-  max-height: 400px
-  max-width: 270px
-  width: 100%
 
-  height: 400px
-
-.sticky-wrapper
-  max-width: 970px
-  display: flex
-
-.advertising--bottom
-  margin-bottom: 15px
-  height: 150px
-  max-height: 150px
-
-.advertising--top
-
-  margin-bottom: 15px
-  margin-top: 65px
-
-  height: 150px
-  max-height: 150px
 // sections for flats and links
 .section
   position: relative
   width: 100%
   max-width: 300px
-  margin-right: 15px
+  margin-right: 20px
   margin-bottom: 15px
 
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15)
   background-color: #fff
 
+.section:nth-child(2n)
+  margin-right: 0
 a.section:hover
   text-decoration: none
 
@@ -331,55 +351,3 @@ a.section:hover
 //    margin-right: 0
 
 
-
-@media (min-width: 991px)
-  .section:nth-child(even)
-    margin-right: 0
-  .section
-    margin-right: 15px
-  .section__buttons
-    padding-left: 10px
-    padding-right: 10px
-
-@media (min-width: 1199px)
-  .section__buttons
-    padding-left: 25px
-    padding-right: 25px
-
-@media (min-width: 991px) and (max-width: 1199px)
-  .section:nth-child(even)
-    margin-right: 10px
-  .section:nth-child(3n)
-    margin-right: 0
-
-@media (max-width: 991px)
-  .intro-block__wrap-buttons
-    flex-direction: column
-    justify-content: space-between
-    max-width: 50%
-    height: 42%
-
-  .intro-block__content--morgage
-    flex-direction: column
-    align-items: flex-start
-
-  .section
-    margin-right: 3%
-  .section:nth-child(even)
-    margin-right: 0
-  .section__wrap
-    justify-content: center
-  .section__buttons
-    justify-content: center
-
-  .section__button:first-child
-    margin-right: 3%
-  .intro-block__content
-    margin-top: 0
-
-  .sticky-wrapper
-    height: 0 !important
-
-@media (max-width: 672px)
-  .section
-    margin-right: 1%

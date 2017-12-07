@@ -1,12 +1,8 @@
 // new-flats-search
 
-.intro-block__content--search
-  position: relative
-.new-building__search
-  padding: 69px 72px
-  width: 100%
-
-  background-color: rgba(0,0,0,0.8)
+.section__preview-title--search
+  margin-bottom: 13px
+  line-height: normal
 
 .new-building__search-header
   margin-bottom: 27px
@@ -52,7 +48,7 @@
 .new-building__search-form
   display: flex
   justify-content: space-between
-  align-items: flex-end
+  align-items: flex-start
 
 .new-building__search-form
   & form
@@ -74,37 +70,74 @@
 .bs-caret
     display: none
 
+.form-control
+  padding-top: 20px
+  padding-bottom: 20px
+  border-radius: 5px 0 0 5px
+  border: 1px solid #b5b5b5
+
 .search--price
   margin-right: 15px
-  margin-bottom: 26px
   max-width: 303px
 
 .search--price input::-webkit-input-placeholder
   color: black
-  font-weight: 700
+  font-weight: 400
 
 .search--price input::-moz-placeholder
   color: black
-  font-weight: 700
+  font-weight: 400
 .search--price input:-moz-placeholder
   color: black
-  font-weight: 700
+  font-weight: 400
 .search--price input:-ms-input-placeholder
   color: black
-  font-weight: 700
+  font-weight: 400
 
 .form--price
   max-width: 140px
+
+.form--price:first-child
+  margin-right: 5px
+
+.form--select
+  margin-bottom: 15px
+
+.form--select .btn
+  padding-top: 10px
+  padding-bottom: 10px
+  border-radius: 5px
+  border: 1px solid #b5b5b5
+
+.form--select span
+  text-align: center
+
+
 .form--price:first-child
   border-bottom-right-radius: 0
   border-top-right-radius: 0
+
 .form--price:nth-child(2)
   border-bottom-left-radius: 0
   border-top-left-radius: 0
+  border-bottom-right-radius: 5px
+  border-top-right-radius: 5px
+
 .form--plans
   display: flex
   flex-direction: column
   margin-right: 13px
+  margin-left: 1px
+
+  & .btn
+    padding-top: 10px
+    padding-bottom: 10px
+    padding-left: 15px
+    padding-right: 15px
+    border-radius: 5px
+    font-weight: 400
+    border: 1px solid #b5b5b5
+
 
 .bootstrap-select.btn-group.fit-width .dropdown-toggle .filter-option
   color: black
@@ -121,7 +154,13 @@
   background-color: #ffc000
 
 .bootstrap-select.btn-group .dropdown-toggle .filter-option
-  text-align: left
+  text-align: center
+
+.bootstrap-select.btn-group .dropdown-toggle .filter-option
+  font-weight: 400
+
+.bootstrap-select > .dropdown-toggle
+  padding-right: 12px
 .new-building__map
   position: absolute
   z-index: -1

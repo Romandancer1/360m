@@ -1,0 +1,96 @@
+.main-tours
+  max-width: 670px
+  margin-bottom: 15px
+  display: flex
+  flex-direction: column
+
+.main-tours__card
+  z-index: 1
+  position: relative
+
+  margin-right: 15px
+  margin-bottom: 15px
+  width: 302px
+
+  background-color: rgba(0,0,0,0.7)
+
+
+  & span
+    font-size: 72px
+    font-weight: 700
+    color: $tours-yellow
+
+.main-tours__card-picture
+  z-index: -1
+  position: absolute
+  top: 0
+  left: 0
+
+.main-tours__card:nth-child(2n)
+  margin-right: 0
+
+
+.main-tours__card--large
+  margin-right: 0
+  margin-bottom: 0
+  min-height: 378px
+  width: 100%
+  & .main-tours__content
+    padding-top: 40px
+    padding-left: 40px
+    padding-bottom: 78px
+    padding-right: 55px
+
+  & .main-tours__type
+    font-size: 20px
+
+
+  & .main-tours__name
+    font-size: 48px
+    margin-bottom: 130px
+
+
+.main-tours__content
+  padding-top: 25px
+  padding-left: 30px
+  padding-bottom: 35px
+
+  display: flex
+  flex-direction: column
+
+  background-color: rgba(0,0,0,0.5)
+
+
+.main-tours__type
+  font-size: 14px
+  font-weight: 400
+  color: #ffffff
+
+.main-tours__name
+  margin-bottom: 30px
+  font-size: 18px
+  font-weight: 700
+
+  color: #ffffff
+
+.main-tours__wrap
+  display: flex
+  align-items: center
+
+  justify-content: space-between
+
+
+.main-tours__list
+  display: flex
+  padding: 20px 25px
+  flex-wrap: wrap
+  background-color: $gray-background
+
+.main-tours__button
+  width: 100%
+  max-width: 100%
+  font-size: 16px
+
+
+
+

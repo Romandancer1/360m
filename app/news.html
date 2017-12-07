@@ -30,70 +30,49 @@
 
 <!-- HEADER -->
 <header class="header__wrap">
-    <div class="container">
-        <div class="row">
-            <div class="header">
-                <div class="col-sm-3 col-md-3 header__logo-wrap">
-
-                    <button class="header__hamburger hidden-md hidden-lg">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-
-                    <a href="" class="header__logo">
-                        <img class="hidden-sm hidden-xs" src="img/header-logo.png" alt="Логотип 360m.ru" width="117" height="47">
-                        <img class="hidden-md hidden-lg header__logo--mobile" src="img/header/header-logo-mobile.png" alt="Логотип 360m.ru мобильный" width="84" height="23">
-                    </a>
-                    <div style="
-                      width: 15px;height: 20px;
-                      margin-right: 8px;
-                      background-image: url('img/icons/icons-sprite.png');
-                      background-position: -1px -80px;
-                      background-size: 249px;  ">
-
-                    </div>
-                    <button type="button" class="header__city-toggle" data-toggle="modal" data-target=".modal__city-choose">
-                        Иркутск
-                    </button>
+    <div class="content__container">
+        <div class="header">
+            <div class="header__logo-wrap">
+                <a href="" class="header__logo">
+                    <img class="" src="img/logos/360m-black.png" alt="Логотип 360m.ru" width="64" height="18">
+                </a>
+                <div class="header__logo-sign">
+                    <div class="header__logo-sign__point"></div>
                 </div>
-                <ul class="col-md-7 hidden-sm hidden-xs header__nav-list">
-                    <li class="header__nav-item">
-                        <a href="" class="header__nav-link">Новостройки</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="" class="header__nav-link">Застройщики</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="" class="header__nav-link">Ипотека</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="" class="header__nav-link">Виртуальные туры</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="" class="header__nav-link">Фотоотчеты</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="" class="header__nav-link">Видео</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="" class="header__nav-link">Новости</a>
-                    </li>
-                </ul>
-
-                <a href="#" class="header__desktop-link col-sm-2 hidden-md hidden-lg">Полная версия сайта</a>
-
-                <div class="col-md-2 col-sm-1 header__login-block">
-                    <a class="header__login-link" href=""></a>
-                </div>
+                <button type="button" class="header__city-toggle" data-toggle="modal" data-target=".modal__city-choose">
+                    Иркутск
+                </button>
             </div>
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a href="" class="header__nav-link">Новостройки</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="" class="header__nav-link">Застройщики</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="" class="header__nav-link">Ипотека</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="" class="header__nav-link">Виртуальные туры</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="" class="header__nav-link">Фотоотчеты</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="" class="header__nav-link">Видео</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="" class="header__nav-link">Новости</a>
+                </li>
+            </ul>
         </div>
     </div>
 </header>
 
 <!--BRANDING-->
 
-<div class="branding hidden-xs hidden-sm">
+<div class="branding">
     <a class="" href="#" >
         <!--<img src="img/main/38sigma.jpg" alt="Брендирование Иркутск" title="">-->
         <div style="background: #ae322c; width: 9999px;height: 9999px"></div>
@@ -101,67 +80,110 @@
     </a>
 </div>
 
-<!--ADVERTISE MOBILE ONLY-->
-<div class="container">
-    <div class="col-sm-12 hidden-md hidden-lg advertising advertising--top">
-
-    </div>
-</div>
-
-
-
-<!--CONTENT--->
-
-<div class="container content">
-
-    <!--NEWS-INTRO-->
-    <div class="col-lg-10 col-lg-offset-1 intro-block__content">
-        <div class="news__wrap">
-            <section class="news__preview">
-                <h2 class="news__preview-pagetitle">Новости недвижимости</h2>
-                <h1 class="news__preview-title">ФСК "Домстрой начала продажи квартир в новом жилом комплексе "Зеленый берег"</h1>
-                <div class="news__preview-tags">
-                    <span>Tеги</span>
-                    <div class="tags__wrap">
-                        <p>#Красноярск</p>
-                        <p>#Домстрой</p>
-                        <p>#Зеленый берег</p>
-                    </div>
-                </div>
-            </section>
-            <div class="news__picture">
-                <img src="../img/news/news-bg-small.png" alt="Картинка новости">
+<!--SECTION-PROMO-->
+<div class="content__container promo-slider">
+    <div class="section__preview">
+        <h3 class="section__preview-smalltitle">Новости недвижимости</h3>
+        <h1 class="section__preview-title section__preview-title--news">
+            ФСК «Домстрой» начала продажи квартир
+            в новом жилом комплексе
+            «Зеленый Берег»
+        </h1>
+        <div class="section__preview-tags">
+            <p class="section__preview-tags-title">Теги</p>
+            <div class="section__preview-tags-wrap">
+                <a href="#">#Красноярск </a>
+                <a href="#">#Домстрой </a>
+                <a href="#">#Зеленый берег </a>
             </div>
         </div>
     </div>
-
-
-
-    <section class="col-md-12 col-lg-12" id="wrapper">
-
-        <!--RESULTS-->
-        <div class="col-lg-offset-1 col-lg-7 col-md-12 section-aside">
-            <article class="news__text">
-                <p>ФСК «Домстрой» начала продажи квартир в новом жилом комплексе «Зеленый Берег»</p>
-            </article>
-        </div>
-
-
-        <!-- ADVERTISE-BLOCK-->
-        <div class="col-md-3 advertising advertising--right hidden-xs hidden-sm hidden-md" id="sticker"></div>
-
-    </section>
 </div>
 
+<!--CONTENT--->
+<div class="content__container content__columns content--news">
+    <div class="content__left">
+        <!--NEWS-RESULT-->
+        <div class="section-aside content">
+            <article class="news__text">
+                <p>ФСК «Домстрой» начала продажи квартир в новом жилом комплек«Зеленый Берег»</p>
+            </article>
+        </div>
+    </div>
+    <div class="content__right" id="wrapper">
+        <!--NEWS SIDEBAR-->
+        <div class="news-sidebar content">
+            <div class="news-sidebar__header">
+                <h3 class="news-sidebar__title">Новости недвижимости</h3>
+            </div>
+            <div class="news-sidebar__content">
+                <a href="#" class="news-card">
+                    <div class="news-card__header">
+                        <img src="img/cards/new-building.png" width="200" height="110" class="news-card__picture" alt="Превью новости">
+                    </div>
+                    <p class="news-card__text">
+                        В ЖК «Молодежный» стартовала
+                        вторая очередь строительства
+                        микрорайона.
+                    </p>
+                </a>
 
-<!--NEWS-RESULT-->
+                <a href="#" class="news-card">
+                    <div class="news-card__header">
+                        <img src="img/cards/new-building.png" width="200" height="110" class="news-card__picture" alt="Превью новости">
+                    </div>
+                    <p class="news-card__text">
+                        В ЖК «Молодежный» стартовала
+                        вторая очередь строительства
+                        микрорайона.
+                    </p>
+                </a>
+
+                <a href="#" class="news-card">
+                    <div class="news-card__header">
+                        <img src="img/cards/new-building.png" width="200" height="110" class="news-card__picture" alt="Превью новости">
+                    </div>
+                    <p class="news-card__text">
+                        В ЖК «Молодежный» стартовала
+                        вторая очередь строительства
+                        микрорайона.
+                    </p>
+                </a>
+
+                <a href="#" class="news-card">
+                    <div class="news-card__header">
+                        <img src="img/cards/new-building.png" width="200" height="110" class="news-card__picture" alt="Превью новости">
+                    </div>
+                    <p class="news-card__text">
+                        В ЖК «Молодежный» стартовала
+                        вторая очередь строительства
+                        микрорайона.
+                    </p>
+                </a>
+
+                <a href="#" class="news-card">
+                    <div class="news-card__header">
+                        <img src="img/cards/new-building.png" width="200" height="110" class="news-card__picture" alt="Превью новости">
+                    </div>
+                    <p class="news-card__text">
+                        В ЖК «Молодежный» стартовала
+                        вторая очередь строительства
+                        микрорайона.
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="advertising advertising--right" id="sticker"></div>
+    </div>
+</div>
+
 
 
 <!-- FOOTER -->
 <footer class="footer__wrap">
-    <div class="container">
-        <div class="row footer">
-            <nav class="col-md-offset-1 col-md-5 hidden-sm hidden-xs footer__nav">
+    <div class="content__container">
+        <div class="footer">
+            <nav class="footer__nav">
                 <ul class="footer__nav-list">
                     <li class="footer__nav-item">
                         <a href="" class="footer__nav-link">Главная</a>
@@ -196,8 +218,8 @@
                 </ul>
             </nav>
 
-            <div class="col-md-6 footer__right">
-                <div class="footer__login-block hidden-sm hidden-xs">
+            <div class="footer__right">
+                <div class="footer__login-block">
                     <a href="" class="footer__login button green-btn small-btn">Войти на сайт</a>
                 </div>
                 <div class="footer__copyright">
@@ -223,7 +245,7 @@
                 </div>
             </div>
         </div>
-        <p class="col-md-10 col-md-offset-1 footer__info">
+        <p class="footer__info">
             Информация о ценах на квартиры, размещенная на сайте 360m.ru не является публичной офертой.
             Проектные декларации строительных объектов размещаются на сайтах застройщиков. Сайт 360m.ru -
             информационный ресурс о новостройках. Все медийные материалы сайта находятся под защитой правообладателей,

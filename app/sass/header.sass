@@ -13,12 +13,15 @@
 .header
   display: flex
   align-items: center
-  justify-content: space-between
-  height: 47px
+
+  height: 46px
   margin: 0 auto
 
 
 .header__logo-wrap
+  width: 100%
+  max-width: 250px
+  margin-right: 10px
   display: flex
   align-items: center
 
@@ -26,117 +29,50 @@
     text-decoration: underline
     color: #b1b1b1
 
+.header__logo-sign
 
-.header__hamburger
-  display: flex
-  flex-direction: column
-  align-items: baseline
-  width: 38px
-  height: 30px
-  margin-left: 50px
-  margin-right: 30px
-  margin-top: 5px
 
-  transition: all 300ms cubic-bezier(.61, .01, .42, 1)
-  cursor: pointer
-  background: transparent
-  border: 0
 
-.header__hamburger span
-  height: 0
-  margin-bottom: 3px
-  width: 38px
-  display: block
 
-  transition: all 300ms cubic-bezier(.61, .01, .42, 1)
-  border: 3px solid red
+.header__logo-sign__point
+  width: 3px
+  height: 3px
+  border: 3px solid #4e4e4e
+  border-radius: 20px
+
 
 
 .header__logo
-  width: 117px
-  height: 47px
-  margin-right: 12px
-  margin-left: 30px
-
-  & img
-    width: 100%
-    height: auto
-
-  & .header__logo--mobile
-    width: 84px
-    height: 23px
+  margin-right: 15px
 
 .header__city-toggle
-  color: #c1c1c1
+  color: #4e4e4e
+  font-size: 14px
+  text-decoration: underline
 
   &:hover
     color: black
 
-.header__login-block
-  display: flex
-  align-items: center
-  justify-content: center
-
-.header__login-link
-  display: flex
-  align-items: center
-  justify-content: center
-  width: 47px
-  height: 47px
-  background-color: #7fb92f
-
-.header__login-link::before
-  content: ""
-  position: relative
-  top: 8px
-  left: 12px
-  display: block
-  width: 20px
-  height: 26px
-  background-image: url('../img/icons/icons-sprite.png')
-  background-position: -178px -68px
-
 .header__nav-list
   display: flex
-  order: 2
+  width: 100%
   align-items: center
-  justify-content: space-between
+  justify-content: flex-start
 
+.header__nav-item
+  margin-right: 58px
+
+.header__nav-item:last-child
+  margin-right: 0
 
 .header__nav-link
+
   font-size: 14px
   line-height: 24px
-  font-weight: bold
+  font-weight: 500
+  text-transform: uppercase
+  letter-spacing: 0.7px
   color: #000
 
-.header__desktop-link
-  text-decoration: underline
 
-.header__login-block
-
-  order: 3
-
-.header__login-link,
-.header__login
-  display: block
-
-.header__login
-  margin-left: 7%
-
-.header__login-link
-  font-size: 16px
-  line-height: 24px
-  color: #787878
-  text-decoration: underline
-
-@media (max-width: 991px)
-  .header__logo
-    margin-left: 0
-    margin-right: 30px
-    display: flex
-    align-items: center
-    width: 83px
-
-  .header__login-block
-    margin-right: 50px
 

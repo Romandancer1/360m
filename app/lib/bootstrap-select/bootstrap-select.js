@@ -1870,3 +1870,10 @@
 
 
 }));
+
+
+document.getElementsByClassName('form--price')[0].placeholder='стоимость м2 от';
+document.getElementsByClassName('form--price')[1].placeholder='стоимость м2 до';
+
+
+

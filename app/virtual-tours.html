@@ -31,62 +31,49 @@
 
 <!-- HEADER -->
 <header class="header__wrap">
-    <div class="container">
-        <div class="row">
-            <div class="header">
-                <div class="col-sm-3 col-md-3 header__logo-wrap">
-
-                    <button class="header__hamburger hidden-md hidden-lg">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-
-                    <a href="" class="header__logo">
-                        <img class="hidden-sm hidden-xs" src="img/header-logo.png" alt="Логотип 360m.ru" width="117" height="47">
-                        <img class="hidden-md hidden-lg header__logo--mobile" src="img/header/header-logo-mobile.png" alt="Логотип 360m.ru мобильный" width="84" height="23">
-                    </a>
-                    <div style="width: 15px;height: 20px;margin-right: 8px;background-image: url('img/icons/icons-sprite.png');background-position: -4px -98px;"></div>
-                    <!--div для иконки карты, пока стили задам через style, потому что непонятно кнопка это или просто картинка, если картинка, то сделаем псевдоэлементом-->
-                    <span>Иркутск</span>
+    <div class="content__container">
+        <div class="header">
+            <div class="header__logo-wrap">
+                <a href="" class="header__logo">
+                    <img class="" src="img/logos/360m-black.png" alt="Логотип 360m.ru" width="64" height="18">
+                </a>
+                <div class="header__logo-sign">
+                    <div class="header__logo-sign__point"></div>
                 </div>
-                <ul class="col-md-7 hidden-sm hidden-xs header__nav-list">
-                    <li class="header__nav-item">
-                        <a href="" class="header__nav-link">Новостройки</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="" class="header__nav-link">Застройщики</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="" class="header__nav-link">Ипотека</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="" class="header__nav-link">Виртуальные туры</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="" class="header__nav-link">Фотоотчеты</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="" class="header__nav-link">Видео</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="" class="header__nav-link">Новости</a>
-                    </li>
-                </ul>
-
-                <a href="#" class="header__desktop-link col-sm-2 hidden-md hidden-lg">Полная версия сайта</a>
-
-                <div class="col-md-2 col-sm-1 header__login-block">
-                    <a class="header__login-link" href=""></a>
-                </div>
+                <button type="button" class="header__city-toggle" data-toggle="modal" data-target=".modal__city-choose">
+                    Иркутск
+                </button>
             </div>
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a href="" class="header__nav-link">Новостройки</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="" class="header__nav-link">Застройщики</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="" class="header__nav-link">Ипотека</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="" class="header__nav-link">Виртуальные туры</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="" class="header__nav-link">Фотоотчеты</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="" class="header__nav-link">Видео</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="" class="header__nav-link">Новости</a>
+                </li>
+            </ul>
         </div>
     </div>
 </header>
 
 <!--BRANDING-->
 
-<div class="branding hidden-xs hidden-sm">
+<div class="branding">
     <a class="" href="#" >
         <!--<img src="img/main/38sigma.jpg" alt="Брендирование Иркутск" title="">-->
         <div style="background: #ae322c; width: 9999px;height: 9999px"></div>
@@ -94,88 +81,117 @@
     </a>
 </div>
 
-<!--ADVERTISE MOBILE ONLY-->
-<div class="container">
-    <div class="col-sm-12 hidden-md hidden-lg advertising advertising--top">
-
+<!--SECTION-PROMO-->
+<div class="content__container promo-slider">
+    <div class="section__preview">
+        <h1 class="section__preview-title">
+            Виртуальные туры по новостройкам
+        </h1>
+        <p class="section__preview-text section__preview-text--linked">
+            Поиск по тегам
+        </p>
+        <button class="button medium-btn primary-red-btn section__preview-choose">
+            Смотреть 136 новостей
+        </button>
+        <button class="button medium-btn black-btn">
+            Выбрать на карте
+        </button>
     </div>
 </div>
 
 
 <!--CONTENT--->
 
-<div class="container content">
-
-    <!-- NEW BUILDING CHOOSE-->
-    <div class="col-lg-10 col-lg-offset-1 intro-block__content virtual-tours">
-        <div class="promo-slider__timecount--notmain"></div>
-
-        <div class="virtual-tours__search">
-            <div class="virtual-tours__search-header">
-                <h1 class="intro-block__title">Виртуальные туры по новостройкам</h1>
-                <button class="virtual-tours__showmap">На карте</button>
-            </div>
-            <p class="virtual-tours__text">
-                Посети любую новостройку не выходя
-                из дома на 360m.ru
-            </p>
-            <div class="virtual-tours__wrap">
-                <button class="button medium-btn gray-btn virtual-tours__chose"> Выберите новостройку </button>
-                <button class="button medium-btn yellow-btn"> Показать <span>136</span> программ</button>
-
-            </div>
-        </div>
-
-        <img class="intro-block__man hidden-xs hidden-sm" src="img/main/men.png" alt="Мужчина промо" width="301" height="503">
-        </div>
-
-
-        <div id="yandexmap" class="new-building__map">
-            <!--Сюда ставим яндекс карту-->
-        </div>
-
-
-
-
-
-
-    <section class="col-md-12 col-lg-12" id="wrapper">
-
-        <!--RESULTS-->
-        <div class="col-lg-offset-1 col-lg-7 col-md-12 section-aside">
+<!--CONTENT--->
+<div class="content__container content__columns content--news">
+    <div class="content__left">
+        <!--NEWS-RESULT-->
+        <div class="section-aside content">
             <div class="section-aside__header">
-                <h2>Виртуальные туры</h2>
+                <h3>Виртуальные туры</h3>
             </div>
             <div class="section-aside__table">
                 <div class="section__wrap">
-                    <!--TOUR ITEM-->
-                    <a href="#" class="section section--small">
-                        <header class="tour__header">
+                    <!--NEWS ITEM-->
+                    <a href="#" class="section section--small section--news">
+                        <header class="section-news__header">
                             <img class="flats__picture flats__picture--shadowed" src="img/cards/new-building.png" alt="Изображение квартиры" width="300" height="125" >
-
                         </header>
-                        <img class="tour__picture--right" src="img/main/men.png" alt="Человек" width="103" height="172">
                         <button class="tour__like"></button>
-                        <div class="tour__title">
-                            <h4>ЖК «Молодежный»</h4>
-                            <p>ООО «ФСК ДомСтрой»</p>
+                        <div class="section-news__text">
+                            <p class="photo-card__title">ЖК «Молодежный»</p>
+                            <p class="photo-card__date">4 Сентября 2017</p>
                         </div>
-
                     </a>
-
                 </div>
             </div>
         </div>
+    </div>
+    <div class="content__right" id="wrapper">
+        <!--NEWS SIDEBAR-->
+        <div class="news-sidebar content">
+            <div class="news-sidebar__header">
+                <h3 class="news-sidebar__title">Новости недвижимости</h3>
+            </div>
+            <div class="news-sidebar__content">
+                <a href="#" class="news-card">
+                    <div class="news-card__header">
+                        <img src="img/cards/new-building.png" width="200" height="110" class="news-card__picture" alt="Превью новости">
+                    </div>
+                    <p class="news-card__text">
+                        В ЖК «Молодежный» стартовала
+                        вторая очередь строительства
+                        микрорайона.
+                    </p>
+                </a>
 
+                <a href="#" class="news-card">
+                    <div class="news-card__header">
+                        <img src="img/cards/new-building.png" width="200" height="110" class="news-card__picture" alt="Превью новости">
+                    </div>
+                    <p class="news-card__text">
+                        В ЖК «Молодежный» стартовала
+                        вторая очередь строительства
+                        микрорайона.
+                    </p>
+                </a>
 
-        <!-- ADVERTISE-BLOCK-->
-        <div class="col-md-3 advertising advertising--right hidden-xs hidden-sm hidden-md" id="sticker"></div>
+                <a href="#" class="news-card">
+                    <div class="news-card__header">
+                        <img src="img/cards/new-building.png" width="200" height="110" class="news-card__picture" alt="Превью новости">
+                    </div>
+                    <p class="news-card__text">
+                        В ЖК «Молодежный» стартовала
+                        вторая очередь строительства
+                        микрорайона.
+                    </p>
+                </a>
 
-    </section>
+                <a href="#" class="news-card">
+                    <div class="news-card__header">
+                        <img src="img/cards/new-building.png" width="200" height="110" class="news-card__picture" alt="Превью новости">
+                    </div>
+                    <p class="news-card__text">
+                        В ЖК «Молодежный» стартовала
+                        вторая очередь строительства
+                        микрорайона.
+                    </p>
+                </a>
 
-    <!-- ADVERTISE-BLOCK-->
-    <div class="col-lg-offset-1 col-lg-7 col-md-12 advertising advertising--bottom"></div>
-
+                <a href="#" class="news-card">
+                    <div class="news-card__header">
+                        <img src="img/cards/new-building.png" width="200" height="110" class="news-card__picture" alt="Превью новости">
+                    </div>
+                    <p class="news-card__text">
+                        В ЖК «Молодежный» стартовала
+                        вторая очередь строительства
+                        микрорайона.
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="advertising advertising--right" id="sticker"></div>
+    </div>
 </div>
 
 
