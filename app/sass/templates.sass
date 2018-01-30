@@ -3,30 +3,20 @@
   padding: 0
   margin: 0 auto
 
-
-
-.content__columns
+.content__wrapper
   display: flex
 
-  & .content__left
-    margin-right: 15px
 
-  & .content__right
-    display: flex
+.content__wrapper--padding
+  padding-top: 85px
 
-.content--news
-  margin-bottom: 15px
+.content
+  margin-right: 15px
+  width: 940px
 
 .hidden
   display: none
 
-.branding
-  position: fixed
-  left: 50%
-  margin-left: -960px
-  height: 100%
-  top: 0
-  z-index: 1
 
 
 .input--short
@@ -40,6 +30,7 @@
 /* -----BUTTONS----- */
 
 .button
+
   text-align: center
   line-height: 24px
 
@@ -121,6 +112,22 @@
     border-color: $dark-green
     background-color: $dark-green
 
+.full-green-btn
+  color: white
+
+  border-color: $button-green
+  background-color: $button-green
+
+  &:hover
+    border-color: $button-green
+    background-color: transparent
+    color: $black-text
+
+  &:active
+    border-color: $dark-green
+    background-color: $dark-green
+
+
 .yellow-btn
   color: #000000
 
@@ -176,27 +183,57 @@
 .section
   position: relative
   width: 100%
-  max-width: 300px
-  margin-right: 20px
+  max-width: 280px
+  margin-right: 25px
   margin-bottom: 15px
 
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15)
   background-color: #fff
 
-.section:nth-child(2n)
+.section:nth-child(3n)
   margin-right: 0
+
+a.section--flats
+  .section--flats-content
+    transform: rotateY(360deg)
+    transition: all 0.5s ease
+
+  .section--flats-wrap
+    z-index: -1
+    transform: rotateY(-180deg)
+    transition: all 0.5s ease
+
+a.section--flats:hover
+  text-decoration: none
+
+  .section--flats-content
+    transform: rotateY(180deg)
+    transition: all 0.5s ease
+
+  .section--flats-wrap
+     z-index: 2
+     transform: rotateY(-360deg)
+     transition: all 0.5s ease
+
+a.section:active
+  text-decoration: none
+
+
 a.section:hover
   text-decoration: none
 
-  & .flat__picture
+  & .building__picture
     transition: all 0.5s ease
     transform: scale(1.25)
 
-  & .flats__picture
+  & .building__picture
     transition: all 0.5s ease
     transform: scale(1.25)
+a.section:active
+  text-decoration: none
 
-
+.section--notshadowed
+  border: none
+  box-shadow: none
 
 .section--small
   max-height: 199px
@@ -278,7 +315,7 @@ a.section:hover
 
   font-size: 16px
   line-height: 20px
-  color: $text
+  color: #black
 
   border: 1px solid #d6d6d6
 
@@ -306,48 +343,5 @@ a.section:hover
   background-repeat: no-repeat
   background-position: top 14px right 16px
 
-/* main-content */
-
-.main-content
-  position: relative
-  z-index: 2
-
-/* end-main-content */
-
-/* tabs--simple */
-
-.tab-content--simple > .tab-pane--simple
-  padding: 0 !important // уберу импортанты, надо будет добавить классы и стили для обычных табов, а то они переопределяют эти
-
-  background-color: #fff !important // уберу импортанты, надо будет добавить классы и стили для обычных табов, а то они переопределяют эти
-
-.nav--simple
-  display: flex
-
-.nav--simple .active
-  font-weight: bold
-
-.nav--simple>li
-  width: auto !important // уберу импортанты, надо будет добавить классы и стили для обычных табов, а то они переопределяют эти
-  margin-right: 16px
-  
-.nav--simple>li>a
-  display: inline
-  padding: 0
-
-  color: #000
-  text-align: left
-
-.nav--simple>li>a:active,
-.nav--simple>li>a:focus,
-.nav--simple>li>a:hover
-  color: #000
-  
-  background: none
-
-/* end-tabs--simple */
-//@media (min-width: 1200px)
-//  .section:nth-child(even)
-//    margin-right: 0
 
 

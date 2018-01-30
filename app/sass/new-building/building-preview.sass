@@ -1,40 +1,41 @@
 // new-building
+
 .new-building__preview
-  z-index: 2
   width: 100%
   max-width: 1200px
-  margin-top: 250px
-  margin-bottom: 20px
+  padding-top: 85px
   display: flex
   flex-direction: column
-
   background-color: #ffffff
-
-
 
 .new-building__preview-header
   width: 100%
-  padding: 20px 40px
-  margin-bottom: 10px
+  padding: 20px 20px
+
   display: flex
   justify-content: space-between
   align-items: center
 
   background-color: white
 
-.preview-header__wrap-column
+.preview-header__left-wrap
   display: flex
   flex-direction: column
+
+.preview-header__right-wrap
+  display: flex
+  align-items: center
+
+
 .preview-header__type
-  margin-right: 20px
-  font-size: 18px
+  font-size: 16px
   font-weight: 700
-  color: #939393
+  color: $black-text
 
 .preview-header__name
   font-size: 50px
-  font-weight: 400
-  color: #000000
+  font-weight: 100
+  color: $black-text
   line-height: 60px
 
 .preview-header__wrap
@@ -48,52 +49,60 @@
   letter-spacing: 0.7px
 
 .preview-header__logo
-  margin-right: 20px
+  width: 42px
+  height: 33px
+  margin-right: 10px
+  fill: $primary-red
 
-.preview-header__buildier-name p
+.preview-header__buildier-name
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.preview-header__buildier-name
   margin-right: 20px
   text-align: right
   font-size: 14px
   font-weight: 400
+  line-height: normal
 
   color: #a0a0a0
 
+.preview-header__buildier-name--thin
+  margin-right: 20px
+  text-align: right
+  font-size: 14px
+  font-weight: 400
+  line-height: normal
+
+  color: #a0a0a0
+
+
+.preview-header__buildier-name--bold
+  margin-right: 20px
+  text-align: right
+  font-size: 16px
+  line-height: normal
+
+  color: $black-text
+  font-weight: 700
+  text-decoration: underline
+
 .preview-header__buildier-name span
   margin-right: 20px
-  font-size: 16px
-  font-weight: 700
+  font-size: 14px
+  font-weight: 400
+  color: $black-text
 
 .new-building__preview-wrap
   display: flex
 
-.new-building__preview-picture
-  max-width: 665px
-  margin-right: 30px
+
+.new-building__picture
+  margin-right: 25px
 
 .new-building__preview-content
   display: flex
-  
-.new-building__vtour-link
-  width: 100%
-  padding-top: 60px
-  padding-left: 35px
-  padding-right: 35px
-  background-image: url("../img/new-building/tour-preview.png")
-  background-repeat: no-repeat
-  background-size: cover
+  max-height: 388px
+  margin-bottom: 15px
 
-  & p
-    font-size: 30px
-    margin-bottom: 50px
-    font-weight: 400
-    line-height: 35px
-    color: #ffffff
-
-  & span
-    margin-bottom: 50px
-    font-size: 72px
-    font-weight: 700
-    color: $tours-yellow
-
-  & button
-    margin-top: 70px

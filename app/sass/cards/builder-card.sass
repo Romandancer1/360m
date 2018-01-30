@@ -1,0 +1,48 @@
+#builder-actual
+  display: block
+
+.builder-card
+  max-width: 280px
+  display: flex
+  flex-direction: column
+  margin-bottom: 15px
+  margin-right: 15px
+  overflow: hidden
+
+  &:hover
+    text-decoration: none
+
+    & .builder-card__picture
+      transition: all 0.5s ease
+      transform: scale(1.25)
+
+
+.builder-card__header
+  margin-bottom: 10px
+  overflow: hidden
+
+.builder-card__title
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+  margin-bottom: 15px
+
+  & h4
+    line-height: 21px
+    font-size: 14px
+    font-weight: 500
+    color: $black-text
+
+  & h3
+    line-height: 21px
+    font-size: 17px
+    font-weight: 700
+    color: $black-text
+
+.builder-card__icon
+  fill: $primary-red
+  width: 19px
+  height: 19px
+
+.builder-card--archive
+  filter: grayscale(100%)

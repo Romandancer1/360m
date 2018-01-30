@@ -1,7 +1,9 @@
 .news-card
+  max-width: 210px
   display: flex
   flex-direction: column
   margin-bottom: 15px
+  margin-right: 15px
   overflow: hidden
 
   &:hover
@@ -11,21 +13,23 @@
       transition: all 0.5s ease
       transform: scale(1.25)
 
-
+.news-card:nth-child(4n)
+  margin-right: 0
 
 .news-card__picture
-  width: 200px
+  width: 210px
   height: 110px
 
 .news-card__header
   overflow: hidden
 .news-card__text
-  padding-left: 20px
-  padding-right: 20px
   padding-top: 15px
   padding-bottom: 15px
-  font-size: 12px
+  font-size: 14px
   font-weight: 400
   color: #000000
   background-color: white
+
+.news-card__date
+  color: $gray-text
 

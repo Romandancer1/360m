@@ -1,0 +1,151 @@
+.building__wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+  align-self: flex-end
+
+.building__item
+  margin-bottom: 20px
+  padding-bottom: 15px
+  padding-left: 15px
+  padding-right: 15px
+  margin-right: 10px
+
+  color: #000
+  border: 1px solid #ddd
+
+.building__header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 10px
+  overflow: hidden
+
+  & h3
+    max-width: 80px
+
+.building__title
+  display: flex
+  justify-content: space-between
+  margin-bottom: 15px
+
+  & h4
+    line-height: 21px
+    font-size: 14px
+    font-weight: 500
+    color: $black-text
+
+  & h3
+    line-height: 21px
+    font-size: 17px
+    font-weight: 700
+    color: $black-text
+
+  & p
+    font-size: 12px
+    color: $gray-text
+    text-decoration: underline
+
+.building__types
+  padding-left: 15px
+
+  font-weight: 400
+
+.building__price
+
+  & p
+    font-size: 18px
+    font-weight: 700
+    line-height: normal
+    color: $button-green
+
+.building__location
+  display: flex
+
+  color: $gray-text
+
+.building__location-icon
+
+  width: 19px
+  height: 19px
+  fill: #d9d9d9
+
+.building__date
+  padding-right: 15px
+
+  font-size: 14px
+  line-height: 30px
+  font-weight: 700
+
+.building__hit
+  position: absolute
+  top: 30px
+  left: 200px
+
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 57px
+  height: 57px
+  padding: 5px
+
+
+
+  border-radius: 50px
+
+
+  & p
+    color: #fff
+
+    font-size: 14px
+    font-weight: 700
+
+    z-index: 2
+
+
+
+.building__hit--hit
+  background-color: #ff5400
+
+.building-hit__circle
+  content: ""
+  position: absolute
+
+  height: 69px
+  width: 69px
+
+  border-radius: 50px
+  background-color: #ff5400
+  opacity: 0.37
+  z-index: 1
+
+
+.building__hit--new
+  background-color: #139228
+
+.building__hit--new  .building-hit__circle
+  background-color: #139228
+
+.building__hit--sale
+  background-color: $primary-red
+
+.building__hit--sale .building-hit__circle
+    background-color: $primary-red
+
+
+.building__properties
+  display: flex
+
+.building__properties-icon
+  margin-right: 5px
+  width: 15px
+  height: 15px
+  fill: #4c4c4c
+
+.building__properties-icon--red
+  fill: $primary-red
+
+.building__location-icon--metro
+  margin-left: 5px
+  fill: #454545
+

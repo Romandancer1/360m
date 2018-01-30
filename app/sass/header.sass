@@ -1,5 +1,9 @@
 /* -----HEADER----- */
 
+.modal-open .header__wrap
+  padding-right: 17px
+
+
 .header__wrap
   position: fixed
   top: 0
@@ -8,7 +12,7 @@
   width: 100%
 
   background-color: #fff
-  border-bottom: 1px solid #e8e8e8
+  border-bottom: 2px solid #fb001e
 
 .header
   display: flex
@@ -30,7 +34,13 @@
     color: #b1b1b1
 
 .header__logo-sign
+  margin-right: 5px
 
+  & svg
+    margin-top: 8px
+    fill: #d9d9d9
+    width: 19px
+    height: 19px
 
 
 
@@ -43,6 +53,8 @@
 
 
 .header__logo
+  display: flex
+  align-items: center
   margin-right: 15px
 
 .header__city-toggle
@@ -69,7 +81,7 @@
 
   font-size: 14px
   line-height: 24px
-  font-weight: 500
+  font-weight: 700
   text-transform: uppercase
   letter-spacing: 0.7px
   color: #000

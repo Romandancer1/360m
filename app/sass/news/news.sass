@@ -1,59 +1,71 @@
-.news__wrap
+
+.news-page__header
   display: flex
   justify-content: space-between
+  padding-top: 30px
+  padding-left: 30px
+  padding-right: 35px
+  padding-bottom: 30px
 
-.news__preview
-  padding-left: 70px
-  padding-top: 70px
-  padding-right: 30px
-
+.news-page__header-wrapper
   display: flex
-  flex-direction: column
-  max-width: 50%
 
-.news__preview-pagetitle
-  font-size: 18px
+.news-page__header-city
+  margin-right: 35px
+  font-weight: 700
+  color: $primary-red
+
+.news-page__header-pagetitle
+  font-size: 16px
+  font-weight: 400
+  color: $black-text
+
+.news-page__header-source
+  display: flex
+  justify-content: center
+  align-items: center
+
+.news-page__header-source-link
+  margin-left: 5px
+  text-decoration: underline
   font-weight: 700
 
-  color: #000000
+.news-page__header-author
+  display: flex
+  justify-content: center
+  align-items: center
 
-.news__preview-title
-  margin-bottom: 40px
-  font-size: 30px
-  font-weight: 400
-  line-height: normal
-  color: #000000
+.news-page__header-author-link
+  margin-left: 5px
+  text-decoration: underline
+  font-weight: 700
 
-.news__preview-tags
-  margin-bottom: 50px
-  & span
-    font-size: 16px
+.news--nopadding
+  padding-left: 0
+  padding-right: 0
+
+.news-page__preview
+  display: flex
+  margin-bottom: 30px
+
+.news-page__preview-text
+  width: 50%
+  padding-top: 30px
+  padding-bottom: 50px
+  border-top: 2px solid $light-red
+  border-bottom: 2px solid $light-red
+
+  & h1
+    font-size: 30px
     font-weight: 700
-    color: #848484
 
-  & .tags__wrap
-    display: flex
-  & p
-    margin-right: 10px
-    font-size: 14px
-    font-weight: 400
-    text-decoration: underline
-    color: #010101
 
-.news__picture
-  max-width: 50%
+.news-page__preview-picture
+  width: 50%
 
   & img
-    width: 100%
-    height: 100%
-
-.news__text
-  padding: 40px 30px 40px 30px
-  min-height: 500px
-  background-color: white
+    max-width: 100%
+    max-height: 277px
 
 
-  & p
-    font-size: 18px
-    font-weight: 400
-    color: #000000
+
